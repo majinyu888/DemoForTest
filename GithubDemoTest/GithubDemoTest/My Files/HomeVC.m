@@ -9,7 +9,7 @@
 #import "HomeVC.h"
 
 #import "POPAnimationVC.h" //facebook: animation framework
-#import "PhotoListVC.h"  //photo
+#import "PhotoListVC.h"    //photo
 
 @interface HomeVC ()<
 UICollectionViewDataSource,
