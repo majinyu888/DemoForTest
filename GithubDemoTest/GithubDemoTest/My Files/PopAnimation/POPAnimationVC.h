@@ -6,8 +6,8 @@
 //  Copyright © 2016年 com.bm.hb. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseVC.h"
 
-@interface POPAnimationVC : UIViewController
+@interface POPAnimationVC : BaseVC
 
 @end

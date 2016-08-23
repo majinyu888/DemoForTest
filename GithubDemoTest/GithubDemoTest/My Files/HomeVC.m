@@ -7,9 +7,9 @@
 //
 
 #import "HomeVC.h"
-#import "Header.h"
 
 #import "POPAnimationVC.h" //facebook: animation framework
+#import "PhotoListVC.h"  //photo
 
 @interface HomeVC ()<
 UICollectionViewDataSource,
@@ -34,7 +34,9 @@ UICollectionViewDelegateFlowLayout
 
 - (void)initData
 {
-    maList = @[@"POP动画",@"HHHH"].mutableCopy;
+    self.title = @"测试Demo";
+    
+    maList = @[@"POP动画",@"图片浏览器",@"侧滑菜单"].mutableCopy;
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.itemSize = CGSizeMake(80, 80);
@@ -64,15 +66,18 @@ UICollectionViewDelegateFlowLayout
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([self class]) forIndexPath:indexPath];
-    UILabel *lblTitle = [[UILabel alloc] init];
+    cell.backgroundColor = [Utils randomColor];
+    
+    UILabel *lblTitle = [[UILabel alloc] initWithFrame:cell.frame];
+    lblTitle.text = maList[indexPath.item];
     lblTitle.font = [UIFont systemFontOfSize:15];
     lblTitle.textColor = [UIColor whiteColor];
     lblTitle.textAlignment = NSTextAlignmentCenter;
-    lblTitle.text = maList[indexPath.item];
-    [lblTitle sizeToFit];
     lblTitle.center = cell.contentView.center;
+    lblTitle.adjustsFontSizeToFitWidth = YES;
+    lblTitle.minimumScaleFactor = 0.2;
+    //    [lblTitle sizeToFit];//在不给定Frame的时候这个属性好使
     [cell.contentView addSubview:lblTitle];
-    cell.backgroundColor = [Utils randomColor];
     return cell;
 }
 
@@ -82,6 +87,11 @@ UICollectionViewDelegateFlowLayout
         case 0: {
             POPAnimationVC *pop = [[POPAnimationVC alloc] init];
             [self.navigationController pushViewController:pop animated:YES];
+            break;
+        }
+        case 1: {
+            PhotoListVC *photo = [[PhotoListVC alloc] init];
+            [self.navigationController pushViewController:photo animated:YES];
             break;
         }
             

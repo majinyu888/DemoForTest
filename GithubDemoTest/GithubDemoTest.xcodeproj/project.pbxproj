@@ -13,7 +13,15 @@
 		278CBE341D66F86500B502BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278CBE321D66F86500B502BF /* LaunchScreen.storyboard */; };
 		278CBE3F1D66F8DF00B502BF /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 278CBE3E1D66F8DF00B502BF /* HomeVC.m */; };
 		278CBE441D67031700B502BF /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 278CBE431D67031700B502BF /* Utils.m */; };
-		278CBE471D67050900B502BF /* POPAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 278CBE461D67050900B502BF /* POPAnimationVC.m */; };
+		27D4F6C11D6BED2100135D6D /* POPAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4F6C01D6BED2100135D6D /* POPAnimationVC.m */; };
+		27D4F6C51D6BED6600135D6D /* PhotoListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4F6C41D6BED6600135D6D /* PhotoListVC.m */; };
+		27D4F6E51D6C26D200135D6D /* HZPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4F6DA1D6C26D200135D6D /* HZPhotoBrowser.m */; };
+		27D4F6E61D6C26D200135D6D /* HZPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4F6DD1D6C26D200135D6D /* HZPhotoBrowserView.m */; };
+		27D4F6E71D6C26D200135D6D /* HZPhotoGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4F6DF1D6C26D200135D6D /* HZPhotoGroup.m */; };
+		27D4F6E81D6C26D200135D6D /* HZPhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4F6E11D6C26D200135D6D /* HZPhotoItem.m */; };
+		27D4F6E91D6C26D200135D6D /* HZWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4F6E31D6C26D200135D6D /* HZWaitingView.m */; };
+		27D4F6EA1D6C26D200135D6D /* whiteplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 27D4F6E41D6C26D200135D6D /* whiteplaceholder.png */; };
+		27D4F6EE1D6C294000135D6D /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4F6ED1D6C294000135D6D /* BaseVC.m */; };
 		2D0C7B76D16893F77F6ACDEA /* libPods-GithubDemoTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE96C65B4CA25F7E78D0B7A /* libPods-GithubDemoTest.a */; };
 /* End PBXBuildFile section */
 
@@ -30,8 +38,24 @@
 		278CBE411D66FD5800B502BF /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		278CBE421D67031700B502BF /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		278CBE431D67031700B502BF /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
-		278CBE451D67050900B502BF /* POPAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPAnimationVC.h; sourceTree = "<group>"; };
-		278CBE461D67050900B502BF /* POPAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPAnimationVC.m; sourceTree = "<group>"; };
+		27D4F6BF1D6BED2100135D6D /* POPAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPAnimationVC.h; sourceTree = "<group>"; };
+		27D4F6C01D6BED2100135D6D /* POPAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPAnimationVC.m; sourceTree = "<group>"; };
+		27D4F6C31D6BED6600135D6D /* PhotoListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoListVC.h; sourceTree = "<group>"; };
+		27D4F6C41D6BED6600135D6D /* PhotoListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoListVC.m; sourceTree = "<group>"; };
+		27D4F6D91D6C26D200135D6D /* HZPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowser.h; sourceTree = "<group>"; };
+		27D4F6DA1D6C26D200135D6D /* HZPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoBrowser.m; sourceTree = "<group>"; };
+		27D4F6DB1D6C26D200135D6D /* HZPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		27D4F6DC1D6C26D200135D6D /* HZPhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowserView.h; sourceTree = "<group>"; };
+		27D4F6DD1D6C26D200135D6D /* HZPhotoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoBrowserView.m; sourceTree = "<group>"; };
+		27D4F6DE1D6C26D200135D6D /* HZPhotoGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoGroup.h; sourceTree = "<group>"; };
+		27D4F6DF1D6C26D200135D6D /* HZPhotoGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoGroup.m; sourceTree = "<group>"; };
+		27D4F6E01D6C26D200135D6D /* HZPhotoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoItem.h; sourceTree = "<group>"; };
+		27D4F6E11D6C26D200135D6D /* HZPhotoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoItem.m; sourceTree = "<group>"; };
+		27D4F6E21D6C26D200135D6D /* HZWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZWaitingView.h; sourceTree = "<group>"; };
+		27D4F6E31D6C26D200135D6D /* HZWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZWaitingView.m; sourceTree = "<group>"; };
+		27D4F6E41D6C26D200135D6D /* whiteplaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteplaceholder.png; sourceTree = "<group>"; };
+		27D4F6EC1D6C294000135D6D /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		27D4F6ED1D6C294000135D6D /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		7BE96C65B4CA25F7E78D0B7A /* libPods-GithubDemoTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GithubDemoTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96FB36849E76CE03077802EE /* Pods-GithubDemoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubDemoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GithubDemoTest/Pods-GithubDemoTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B321EAEA77655436FE0768D1 /* Pods-GithubDemoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubDemoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GithubDemoTest/Pods-GithubDemoTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +103,7 @@
 		278CBE231D66F86500B502BF /* GithubDemoTest */ = {
 			isa = PBXGroup;
 			children = (
+				27D4F6EB1D6C293500135D6D /* Base */,
 				278CBE401D66FD2C00B502BF /* Common */,
 				278CBE3C1D66F8BC00B502BF /* My Files */,
 				278CBE241D66F86500B502BF /* Supporting Files */,
@@ -112,8 +137,8 @@
 			children = (
 				278CBE3D1D66F8DF00B502BF /* HomeVC.h */,
 				278CBE3E1D66F8DF00B502BF /* HomeVC.m */,
-				278CBE451D67050900B502BF /* POPAnimationVC.h */,
-				278CBE461D67050900B502BF /* POPAnimationVC.m */,
+				27D4F6C21D6BED3900135D6D /* PhotoBrowser */,
+				27D4F6BE1D6BED2100135D6D /* PopAnimation */,
 			);
 			path = "My Files";
 			sourceTree = "<group>";
@@ -126,6 +151,53 @@
 				278CBE431D67031700B502BF /* Utils.m */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		27D4F6BE1D6BED2100135D6D /* PopAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				27D4F6BF1D6BED2100135D6D /* POPAnimationVC.h */,
+				27D4F6C01D6BED2100135D6D /* POPAnimationVC.m */,
+			);
+			path = PopAnimation;
+			sourceTree = "<group>";
+		};
+		27D4F6C21D6BED3900135D6D /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				27D4F6C31D6BED6600135D6D /* PhotoListVC.h */,
+				27D4F6C41D6BED6600135D6D /* PhotoListVC.m */,
+				27D4F6D81D6C26D100135D6D /* PhotoLib */,
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
+		27D4F6D81D6C26D100135D6D /* PhotoLib */ = {
+			isa = PBXGroup;
+			children = (
+				27D4F6D91D6C26D200135D6D /* HZPhotoBrowser.h */,
+				27D4F6DA1D6C26D200135D6D /* HZPhotoBrowser.m */,
+				27D4F6DB1D6C26D200135D6D /* HZPhotoBrowserConfig.h */,
+				27D4F6DC1D6C26D200135D6D /* HZPhotoBrowserView.h */,
+				27D4F6DD1D6C26D200135D6D /* HZPhotoBrowserView.m */,
+				27D4F6DE1D6C26D200135D6D /* HZPhotoGroup.h */,
+				27D4F6DF1D6C26D200135D6D /* HZPhotoGroup.m */,
+				27D4F6E01D6C26D200135D6D /* HZPhotoItem.h */,
+				27D4F6E11D6C26D200135D6D /* HZPhotoItem.m */,
+				27D4F6E21D6C26D200135D6D /* HZWaitingView.h */,
+				27D4F6E31D6C26D200135D6D /* HZWaitingView.m */,
+				27D4F6E41D6C26D200135D6D /* whiteplaceholder.png */,
+			);
+			path = PhotoLib;
+			sourceTree = "<group>";
+		};
+		27D4F6EB1D6C293500135D6D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				27D4F6EC1D6C294000135D6D /* BaseVC.h */,
+				27D4F6ED1D6C294000135D6D /* BaseVC.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		3CFC3CF6194191F28DC16149 /* Frameworks */ = {
@@ -170,6 +242,7 @@
 				TargetAttributes = {
 					278CBE201D66F86500B502BF = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = H4T4SBZQ29;
 					};
 				};
 			};
@@ -197,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				278CBE341D66F86500B502BF /* LaunchScreen.storyboard in Resources */,
+				27D4F6EA1D6C26D200135D6D /* whiteplaceholder.png in Resources */,
 				278CBE311D66F86500B502BF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +332,16 @@
 			files = (
 				278CBE3F1D66F8DF00B502BF /* HomeVC.m in Sources */,
 				278CBE291D66F86500B502BF /* AppDelegate.m in Sources */,
-				278CBE471D67050900B502BF /* POPAnimationVC.m in Sources */,
+				27D4F6E61D6C26D200135D6D /* HZPhotoBrowserView.m in Sources */,
+				27D4F6EE1D6C294000135D6D /* BaseVC.m in Sources */,
+				27D4F6E71D6C26D200135D6D /* HZPhotoGroup.m in Sources */,
+				27D4F6E91D6C26D200135D6D /* HZWaitingView.m in Sources */,
+				27D4F6C11D6BED2100135D6D /* POPAnimationVC.m in Sources */,
+				27D4F6E81D6C26D200135D6D /* HZPhotoItem.m in Sources */,
 				278CBE441D67031700B502BF /* Utils.m in Sources */,
 				278CBE261D66F86500B502BF /* main.m in Sources */,
+				27D4F6E51D6C26D200135D6D /* HZPhotoBrowser.m in Sources */,
+				27D4F6C51D6BED6600135D6D /* PhotoListVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,10 +448,13 @@
 			baseConfigurationReference = 96FB36849E76CE03077802EE /* Pods-GithubDemoTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GithubDemoTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bm.hb.GithubDemoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -379,10 +463,13 @@
 			baseConfigurationReference = B321EAEA77655436FE0768D1 /* Pods-GithubDemoTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GithubDemoTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bm.hb.GithubDemoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
