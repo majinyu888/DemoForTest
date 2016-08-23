@@ -10,6 +10,7 @@
 
 #import "POPAnimationVC.h" //facebook: animation framework
 #import "PhotoListVC.h"    //photo
+#import "CellHeightVC.h"   //cell height
 
 @interface HomeVC ()<
 UICollectionViewDataSource,
@@ -94,6 +95,12 @@ UICollectionViewDelegateFlowLayout
             [self.navigationController pushViewController:photo animated:YES];
             break;
         }
+        case 2: {
+            CellHeightVC *photo = [[CellHeightVC alloc] init];
+            [self.navigationController pushViewController:photo animated:YES];
+            break;
+        }
+            
             
         default:
             break;
