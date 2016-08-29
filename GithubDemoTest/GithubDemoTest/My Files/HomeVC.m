@@ -11,6 +11,7 @@
 #import "POPAnimationVC.h" //facebook: animation framework
 #import "PhotoListVC.h"    //photo
 #import "CellHeightVC.h"   //cell height
+#import "PopListVC.h"      //弹出列表
 
 @interface HomeVC ()<
 UICollectionViewDataSource,
@@ -37,7 +38,12 @@ UICollectionViewDelegateFlowLayout
 {
     self.title = @"测试Demo";
     
-    maList = @[@"POP动画",@"图片浏览器",@"侧滑菜单"].mutableCopy;
+    maList = @[
+               @"POP动画",
+               @"图片浏览器",
+               @"Cell高度自适应",
+               @"弹出列表"
+               ].mutableCopy;
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.itemSize = CGSizeMake(80, 80);
@@ -101,6 +107,11 @@ UICollectionViewDelegateFlowLayout
             break;
         }
             
+        case 3: {
+            PopListVC *popList = [[PopListVC alloc] init];
+            [self.navigationController pushViewController:popList animated:YES];
+            break;
+        }
             
         default:
             break;
