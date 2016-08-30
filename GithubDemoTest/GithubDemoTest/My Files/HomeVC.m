@@ -12,6 +12,7 @@
 #import "PhotoListVC.h"    //photo
 #import "CellHeightVC.h"   //cell height
 #import "PopListVC.h"      //弹出列表
+#import "MyVC1.h"////自定义转场动画
 
 @interface HomeVC ()<
 UICollectionViewDataSource,
@@ -42,7 +43,8 @@ UICollectionViewDelegateFlowLayout
                @"POP动画",
                @"图片浏览器",
                @"Cell高度自适应",
-               @"弹出列表"
+               @"弹出列表",
+               @"自定义转场动画"
                ].mutableCopy;
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
@@ -110,6 +112,12 @@ UICollectionViewDelegateFlowLayout
         case 3: {
             PopListVC *popList = [[PopListVC alloc] init];
             [self.navigationController pushViewController:popList animated:YES];
+            break;
+        }
+            
+        case 4: {
+            MyVC1 *vc = [[MyVC1 alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
             
