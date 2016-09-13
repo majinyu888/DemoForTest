@@ -11,8 +11,10 @@
 #import "POPAnimationVC.h" //facebook: animation framework
 #import "PhotoListVC.h"    //photo
 #import "CellHeightVC.h"   //cell height
+#import "CellHeightVC2.h"  //cell height
 #import "PopListVC.h"      //弹出列表
 #import "MyVC1.h"////自定义转场动画
+
 
 @interface HomeVC ()<
 UICollectionViewDataSource,
@@ -44,7 +46,8 @@ UICollectionViewDelegateFlowLayout
                @"图片浏览器",
                @"Cell高度自适应",
                @"弹出列表",
-               @"自定义转场动画"
+               @"自定义转场动画",
+               @"Cell高度2"
                ].mutableCopy;
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
@@ -117,6 +120,12 @@ UICollectionViewDelegateFlowLayout
             
         case 4: {
             MyVC1 *vc = [[MyVC1 alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+            
+        case 5: {
+            CellHeightVC2 *vc = [[CellHeightVC2 alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

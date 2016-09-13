@@ -11,6 +11,13 @@
 		2739AB411D75571100135DD5 /* MyAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739AB401D75571100135DD5 /* MyAnimator.m */; };
 		2739AB441D7559E200135DD5 /* MyVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739AB431D7559E200135DD5 /* MyVC1.m */; };
 		2739AB471D7559F200135DD5 /* MyVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739AB461D7559F200135DD5 /* MyVC2.m */; };
+		2776550D1D7ECE5D0086892E /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2776550C1D7ECE5D0086892E /* CommonUtils.m */; };
+		277655151D7ECE8C0086892E /* ManagerImageCLVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 277655101D7ECE8C0086892E /* ManagerImageCLVCell.m */; };
+		277655161D7ECE8C0086892E /* ManagerImageCLVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277655111D7ECE8C0086892E /* ManagerImageCLVCell.xib */; };
+		277655171D7ECE8C0086892E /* ManagerSayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 277655131D7ECE8C0086892E /* ManagerSayCell.m */; };
+		277655181D7ECE8C0086892E /* ManagerSayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277655141D7ECE8C0086892E /* ManagerSayCell.xib */; };
+		2776551B1D7ECEBC0086892E /* CellHeightVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2776551A1D7ECEBC0086892E /* CellHeightVC2.m */; };
+		2776551D1D7ECFB80086892E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2776551C1D7ECFB80086892E /* icon.png */; };
 		278CBE261D66F86500B502BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 278CBE251D66F86500B502BF /* main.m */; };
 		278CBE291D66F86500B502BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 278CBE281D66F86500B502BF /* AppDelegate.m */; };
 		278CBE311D66F86500B502BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278CBE301D66F86500B502BF /* Assets.xcassets */; };
@@ -48,6 +55,17 @@
 		2739AB431D7559E200135DD5 /* MyVC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyVC1.m; sourceTree = "<group>"; };
 		2739AB451D7559F200135DD5 /* MyVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyVC2.h; sourceTree = "<group>"; };
 		2739AB461D7559F200135DD5 /* MyVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyVC2.m; sourceTree = "<group>"; };
+		2776550B1D7ECE5D0086892E /* CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
+		2776550C1D7ECE5D0086892E /* CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
+		2776550F1D7ECE8C0086892E /* ManagerImageCLVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerImageCLVCell.h; sourceTree = "<group>"; };
+		277655101D7ECE8C0086892E /* ManagerImageCLVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerImageCLVCell.m; sourceTree = "<group>"; };
+		277655111D7ECE8C0086892E /* ManagerImageCLVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManagerImageCLVCell.xib; sourceTree = "<group>"; };
+		277655121D7ECE8C0086892E /* ManagerSayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerSayCell.h; sourceTree = "<group>"; };
+		277655131D7ECE8C0086892E /* ManagerSayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerSayCell.m; sourceTree = "<group>"; };
+		277655141D7ECE8C0086892E /* ManagerSayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManagerSayCell.xib; sourceTree = "<group>"; };
+		277655191D7ECEBC0086892E /* CellHeightVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellHeightVC2.h; sourceTree = "<group>"; };
+		2776551A1D7ECEBC0086892E /* CellHeightVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellHeightVC2.m; sourceTree = "<group>"; };
+		2776551C1D7ECFB80086892E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		278CBE211D66F86500B502BF /* GithubDemoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubDemoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		278CBE251D66F86500B502BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		278CBE271D66F86500B502BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -133,6 +151,21 @@
 			path = TransitionVC;
 			sourceTree = "<group>";
 		};
+		2776550E1D7ECE8C0086892E /* CellHeight2 */ = {
+			isa = PBXGroup;
+			children = (
+				2776550F1D7ECE8C0086892E /* ManagerImageCLVCell.h */,
+				277655101D7ECE8C0086892E /* ManagerImageCLVCell.m */,
+				277655111D7ECE8C0086892E /* ManagerImageCLVCell.xib */,
+				277655121D7ECE8C0086892E /* ManagerSayCell.h */,
+				277655131D7ECE8C0086892E /* ManagerSayCell.m */,
+				277655141D7ECE8C0086892E /* ManagerSayCell.xib */,
+				277655191D7ECEBC0086892E /* CellHeightVC2.h */,
+				2776551A1D7ECEBC0086892E /* CellHeightVC2.m */,
+			);
+			path = CellHeight2;
+			sourceTree = "<group>";
+		};
 		278CBE181D66F86500B502BF = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +198,7 @@
 		278CBE3B1D66F88100B502BF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2776551C1D7ECFB80086892E /* icon.png */,
 				278CBE251D66F86500B502BF /* main.m */,
 				278CBE271D66F86500B502BF /* AppDelegate.h */,
 				278CBE281D66F86500B502BF /* AppDelegate.m */,
@@ -182,6 +216,7 @@
 				278CBE3E1D66F8DF00B502BF /* HomeVC.m */,
 				2739AB3B1D7555C400135DD5 /* TransitionVC */,
 				27F83F791D6C33C9006C1111 /* CellHeight */,
+				2776550E1D7ECE8C0086892E /* CellHeight2 */,
 				27D4F6C21D6BED3900135D6D /* PhotoBrowser */,
 				27D4F6BE1D6BED2100135D6D /* PopAnimation */,
 				27A07C0D1D73D67F0031CCA2 /* PopListView */,
@@ -192,6 +227,8 @@
 		278CBE401D66FD2C00B502BF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2776550B1D7ECE5D0086892E /* CommonUtils.h */,
+				2776550C1D7ECE5D0086892E /* CommonUtils.m */,
 				278CBE411D66FD5800B502BF /* Header.h */,
 				278CBE421D67031700B502BF /* Utils.h */,
 				278CBE431D67031700B502BF /* Utils.m */,
@@ -367,7 +404,10 @@
 				27A07C3E1D73D7340031CCA2 /* item_school@2x.png in Resources */,
 				27A07C3C1D73D7340031CCA2 /* item_chat@2x.png in Resources */,
 				27A07C3D1D73D7340031CCA2 /* item_list@2x.png in Resources */,
+				2776551D1D7ECFB80086892E /* icon.png in Resources */,
 				27A07C3F1D73D7340031CCA2 /* item_share@2x.png in Resources */,
+				277655181D7ECE8C0086892E /* ManagerSayCell.xib in Resources */,
+				277655161D7ECE8C0086892E /* ManagerImageCLVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,13 +467,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2739AB441D7559E200135DD5 /* MyVC1.m in Sources */,
+				2776550D1D7ECE5D0086892E /* CommonUtils.m in Sources */,
 				27F83F801D6C34E5006C1111 /* CellHeightCell.m in Sources */,
 				2739AB3E1D75561E00135DD5 /* NavigationControllerDelegate.m in Sources */,
 				278CBE3F1D66F8DF00B502BF /* HomeVC.m in Sources */,
 				278CBE291D66F86500B502BF /* AppDelegate.m in Sources */,
 				27D4F6E61D6C26D200135D6D /* HZPhotoBrowserView.m in Sources */,
 				27D4F6EE1D6C294000135D6D /* BaseVC.m in Sources */,
+				277655171D7ECE8C0086892E /* ManagerSayCell.m in Sources */,
 				2739AB471D7559F200135DD5 /* MyVC2.m in Sources */,
+				277655151D7ECE8C0086892E /* ManagerImageCLVCell.m in Sources */,
 				27D4F6E71D6C26D200135D6D /* HZPhotoGroup.m in Sources */,
 				27F83F7C1D6C3493006C1111 /* CellHeightVC.m in Sources */,
 				2739AB411D75571100135DD5 /* MyAnimator.m in Sources */,
@@ -445,6 +488,7 @@
 				278CBE441D67031700B502BF /* Utils.m in Sources */,
 				278CBE261D66F86500B502BF /* main.m in Sources */,
 				27D4F6E51D6C26D200135D6D /* HZPhotoBrowser.m in Sources */,
+				2776551B1D7ECEBC0086892E /* CellHeightVC2.m in Sources */,
 				27D4F6C51D6BED6600135D6D /* PhotoListVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
