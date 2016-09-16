@@ -20,6 +20,7 @@
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.view.backgroundColor = [Utils randomColor];
+   
 }
 
 
