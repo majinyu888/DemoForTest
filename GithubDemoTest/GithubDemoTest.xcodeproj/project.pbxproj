@@ -11,6 +11,8 @@
 		2739AB411D75571100135DD5 /* MyAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739AB401D75571100135DD5 /* MyAnimator.m */; };
 		2739AB441D7559E200135DD5 /* MyVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739AB431D7559E200135DD5 /* MyVC1.m */; };
 		2739AB471D7559F200135DD5 /* MyVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739AB461D7559F200135DD5 /* MyVC2.m */; };
+		276B93121D9143CD009EF045 /* PageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 276B93101D9143CD009EF045 /* PageCollectionViewCell.m */; };
+		276B93131D9143CD009EF045 /* PageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 276B93111D9143CD009EF045 /* PageCollectionViewCell.xib */; };
 		2776550D1D7ECE5D0086892E /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2776550C1D7ECE5D0086892E /* CommonUtils.m */; };
 		277655151D7ECE8C0086892E /* ManagerImageCLVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 277655101D7ECE8C0086892E /* ManagerImageCLVCell.m */; };
 		277655161D7ECE8C0086892E /* ManagerImageCLVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277655111D7ECE8C0086892E /* ManagerImageCLVCell.xib */; };
@@ -24,7 +26,6 @@
 		278CBE341D66F86500B502BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278CBE321D66F86500B502BF /* LaunchScreen.storyboard */; };
 		278CBE3F1D66F8DF00B502BF /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 278CBE3E1D66F8DF00B502BF /* HomeVC.m */; };
 		278CBE441D67031700B502BF /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 278CBE431D67031700B502BF /* Utils.m */; };
-		279FBFC11D8BE8B0004D215C /* JYCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 279FBFC01D8BE8B0004D215C /* JYCollectionViewFlowLayout.m */; };
 		279FBFC41D8BE8CE004D215C /* CollectionViewPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279FBFC31D8BE8CE004D215C /* CollectionViewPageVC.m */; };
 		27A07C1C1D73D67F0031CCA2 /* PopMenuTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A07C161D73D67F0031CCA2 /* PopMenuTableView.m */; };
 		27A07C3B1D73D7340031CCA2 /* item_battle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27A07C361D73D7340031CCA2 /* item_battle@2x.png */; };
@@ -42,6 +43,9 @@
 		27D4F6E91D6C26D200135D6D /* HZWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4F6E31D6C26D200135D6D /* HZWaitingView.m */; };
 		27D4F6EA1D6C26D200135D6D /* whiteplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 27D4F6E41D6C26D200135D6D /* whiteplaceholder.png */; };
 		27D4F6EE1D6C294000135D6D /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4F6ED1D6C294000135D6D /* BaseVC.m */; };
+		27FFDCDF1D90FAB20099037B /* PagedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27FFDCDE1D90FAB20099037B /* PagedView.xib */; };
+		27FFDCE21D90FAC10099037B /* PagedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FFDCE11D90FAC10099037B /* PagedView.m */; };
+		27FFDCE51D90FBBA0099037B /* PageCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FFDCE41D90FBBA0099037B /* PageCollectionViewFlowLayout.m */; };
 		2D0C7B76D16893F77F6ACDEA /* libPods-GithubDemoTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE96C65B4CA25F7E78D0B7A /* libPods-GithubDemoTest.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +58,9 @@
 		2739AB431D7559E200135DD5 /* MyVC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyVC1.m; sourceTree = "<group>"; };
 		2739AB451D7559F200135DD5 /* MyVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyVC2.h; sourceTree = "<group>"; };
 		2739AB461D7559F200135DD5 /* MyVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyVC2.m; sourceTree = "<group>"; };
+		276B930F1D9143CD009EF045 /* PageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCollectionViewCell.h; sourceTree = "<group>"; };
+		276B93101D9143CD009EF045 /* PageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCollectionViewCell.m; sourceTree = "<group>"; };
+		276B93111D9143CD009EF045 /* PageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageCollectionViewCell.xib; sourceTree = "<group>"; };
 		2776550B1D7ECE5D0086892E /* CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
 		2776550C1D7ECE5D0086892E /* CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
 		2776550F1D7ECE8C0086892E /* ManagerImageCLVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerImageCLVCell.h; sourceTree = "<group>"; };
@@ -77,8 +84,6 @@
 		278CBE411D66FD5800B502BF /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		278CBE421D67031700B502BF /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		278CBE431D67031700B502BF /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
-		279FBFBF1D8BE8B0004D215C /* JYCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCollectionViewFlowLayout.h; sourceTree = "<group>"; };
-		279FBFC01D8BE8B0004D215C /* JYCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		279FBFC21D8BE8CE004D215C /* CollectionViewPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewPageVC.h; sourceTree = "<group>"; };
 		279FBFC31D8BE8CE004D215C /* CollectionViewPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewPageVC.m; sourceTree = "<group>"; };
 		27A07C151D73D67F0031CCA2 /* PopMenuTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuTableView.h; sourceTree = "<group>"; };
@@ -108,6 +113,11 @@
 		27D4F6E41D6C26D200135D6D /* whiteplaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteplaceholder.png; sourceTree = "<group>"; };
 		27D4F6EC1D6C294000135D6D /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
 		27D4F6ED1D6C294000135D6D /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		27FFDCDE1D90FAB20099037B /* PagedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PagedView.xib; sourceTree = "<group>"; };
+		27FFDCE01D90FAC10099037B /* PagedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagedView.h; sourceTree = "<group>"; };
+		27FFDCE11D90FAC10099037B /* PagedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagedView.m; sourceTree = "<group>"; };
+		27FFDCE31D90FBBA0099037B /* PageCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		27FFDCE41D90FBBA0099037B /* PageCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		7BE96C65B4CA25F7E78D0B7A /* libPods-GithubDemoTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GithubDemoTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96FB36849E76CE03077802EE /* Pods-GithubDemoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubDemoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GithubDemoTest/Pods-GithubDemoTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B321EAEA77655436FE0768D1 /* Pods-GithubDemoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubDemoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GithubDemoTest/Pods-GithubDemoTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -237,10 +247,16 @@
 		279FBFBE1D8BE887004D215C /* CollectionViewPage */ = {
 			isa = PBXGroup;
 			children = (
-				279FBFBF1D8BE8B0004D215C /* JYCollectionViewFlowLayout.h */,
-				279FBFC01D8BE8B0004D215C /* JYCollectionViewFlowLayout.m */,
 				279FBFC21D8BE8CE004D215C /* CollectionViewPageVC.h */,
 				279FBFC31D8BE8CE004D215C /* CollectionViewPageVC.m */,
+				276B930F1D9143CD009EF045 /* PageCollectionViewCell.h */,
+				276B93101D9143CD009EF045 /* PageCollectionViewCell.m */,
+				276B93111D9143CD009EF045 /* PageCollectionViewCell.xib */,
+				27FFDCE31D90FBBA0099037B /* PageCollectionViewFlowLayout.h */,
+				27FFDCE41D90FBBA0099037B /* PageCollectionViewFlowLayout.m */,
+				27FFDCE01D90FAC10099037B /* PagedView.h */,
+				27FFDCE11D90FAC10099037B /* PagedView.m */,
+				27FFDCDE1D90FAB20099037B /* PagedView.xib */,
 			);
 			path = CollectionViewPage;
 			sourceTree = "<group>";
@@ -399,11 +415,13 @@
 				278CBE311D66F86500B502BF /* Assets.xcassets in Resources */,
 				27A07C3E1D73D7340031CCA2 /* item_school@2x.png in Resources */,
 				27A07C3C1D73D7340031CCA2 /* item_chat@2x.png in Resources */,
+				276B93131D9143CD009EF045 /* PageCollectionViewCell.xib in Resources */,
 				27A07C3D1D73D7340031CCA2 /* item_list@2x.png in Resources */,
 				2776551D1D7ECFB80086892E /* icon.png in Resources */,
 				27A07C3F1D73D7340031CCA2 /* item_share@2x.png in Resources */,
 				277655181D7ECE8C0086892E /* ManagerSayCell.xib in Resources */,
 				277655161D7ECE8C0086892E /* ManagerImageCLVCell.xib in Resources */,
+				27FFDCDF1D90FAB20099037B /* PagedView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2739AB441D7559E200135DD5 /* MyVC1.m in Sources */,
+				27FFDCE21D90FAC10099037B /* PagedView.m in Sources */,
 				2776550D1D7ECE5D0086892E /* CommonUtils.m in Sources */,
 				2739AB3E1D75561E00135DD5 /* NavigationControllerDelegate.m in Sources */,
 				278CBE3F1D66F8DF00B502BF /* HomeVC.m in Sources */,
@@ -472,10 +491,10 @@
 				27D4F6EE1D6C294000135D6D /* BaseVC.m in Sources */,
 				277655171D7ECE8C0086892E /* ManagerSayCell.m in Sources */,
 				2739AB471D7559F200135DD5 /* MyVC2.m in Sources */,
+				276B93121D9143CD009EF045 /* PageCollectionViewCell.m in Sources */,
 				277655151D7ECE8C0086892E /* ManagerImageCLVCell.m in Sources */,
 				27D4F6E71D6C26D200135D6D /* HZPhotoGroup.m in Sources */,
 				2739AB411D75571100135DD5 /* MyAnimator.m in Sources */,
-				279FBFC11D8BE8B0004D215C /* JYCollectionViewFlowLayout.m in Sources */,
 				27A07C1C1D73D67F0031CCA2 /* PopMenuTableView.m in Sources */,
 				27D4F6E91D6C26D200135D6D /* HZWaitingView.m in Sources */,
 				27D4F6C11D6BED2100135D6D /* POPAnimationVC.m in Sources */,
@@ -484,6 +503,7 @@
 				278CBE441D67031700B502BF /* Utils.m in Sources */,
 				278CBE261D66F86500B502BF /* main.m in Sources */,
 				27D4F6E51D6C26D200135D6D /* HZPhotoBrowser.m in Sources */,
+				27FFDCE51D90FBBA0099037B /* PageCollectionViewFlowLayout.m in Sources */,
 				2776551B1D7ECEBC0086892E /* CellHeightVC2.m in Sources */,
 				27D4F6C51D6BED6600135D6D /* PhotoListVC.m in Sources */,
 			);

@@ -1,14 +1,14 @@
 //
-//  JYCollectionViewFlowLayout.m
+//  PageCollectionViewFlowLayout.m
 //  GithubDemoTest
 //
-//  Created by hb on 16/9/16.
+//  Created by hb on 16/9/20.
 //  Copyright © 2016年 com.bm.hb. All rights reserved.
 //
 
-#import "JYCollectionViewFlowLayout.h"
+#import "PageCollectionViewFlowLayout.h"
 
-@interface JYCollectionViewFlowLayout()
+@interface PageCollectionViewFlowLayout()
 
 /**
  属性数组
@@ -17,8 +17,7 @@
 
 @end
 
-
-@implementation JYCollectionViewFlowLayout
+@implementation PageCollectionViewFlowLayout
 
 - (void)prepareLayout
 {
@@ -73,7 +72,7 @@
 
 /**
  根据 item 计算目标item的位置
-
+ 
  @param item 索引
  @param x    横向偏移
  @param y    竖向偏移
@@ -94,10 +93,10 @@
 
 /**
  根据偏移量计算item
-
+ 
  @param x 横向偏移
  @param y 竖向偏移
-
+ 
  @return
  */
 - (NSUInteger)originItemAtX:(NSUInteger)x y:(NSUInteger)y
@@ -105,6 +104,5 @@
     NSUInteger item = x * self.rowCount + y;
     return item;
 }
-
 
 @end
