@@ -161,19 +161,19 @@ UIScrollViewDelegate
 
 #pragma mark - CollectionView Datasource
 
-//Cell个数
+/// Cell个数
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return self.maCates.count % itemCountOnePage == 0 ? self.maCates.count : (1 + (self.maCates.count/itemCountOnePage)) * itemCountOnePage;
 }
 
-//Cell 尺寸
+/// Cell 尺寸
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     return CGSizeMake(_itemWidth, _itemHeight);
 }
 
-//Cell
+/// Cell
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     PageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([PageCollectionViewCell class]) forIndexPath:indexPath];
@@ -187,29 +187,29 @@ UIScrollViewDelegate
     return cell;
 }
 
-//每组之间的间隔
+/// 每组之间的间隔
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
     return 0.f;
 }
 
-//Cell之间的间距
+/// Cell之间的间距
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
     return 0.f;
 }
 
-//Header Size
+/// Header Size
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
 {
     return CGSizeZero;
 }
-//Footer Size
+/// Footer Size
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
 {
     return CGSizeZero;
 }
-//重用的 Header 或者 Footer
+/// 重用的 Header 或者 Footer
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
     return nil;
@@ -226,14 +226,17 @@ UIScrollViewDelegate
     }
 }
 
-//Cell的点击事件
+/// Cell的点击事件
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    /// block 回调
+    if (self.onItemClickBlock) {
+        self.onItemClickBlock(indexPath);
+    }
 }
 
 #pragma mark - ScrollView Delegate
-
+/// 滑动减速
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     if (scrollView == _collectionView) {
