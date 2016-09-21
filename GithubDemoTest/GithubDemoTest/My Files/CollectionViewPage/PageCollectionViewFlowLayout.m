@@ -94,8 +94,8 @@
 /**
  根据偏移量计算item
  
- @param x 横向偏移
- @param y 竖向偏移
+ @param x 横
+ @param y 竖
  
  @return
  */

@@ -65,22 +65,12 @@
 - (void)initData
 {
     self.pagedView = [[[NSBundle mainBundle] loadNibNamed:@"PagedView" owner:nil options:nil] lastObject];
+    self.pagedView.maCates = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14"].mutableCopy;
 //    self.pagedView.rowCount = 2;
 //    self.pagedView.itemCountPerRow = 3;
 //    self.pagedView.itemHeight = 30;
-//    self.pagedView.maCates = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14"].mutableCopy;
 //    self.pagedView.isShowPageControl = NO;
     [self.view addSubview:self.pagedView];
-
-    WS(ws);
-    [self.pagedView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(ws.view).with.offset(0);
-        make.top.mas_equalTo(ws.view).with.offset(0);
-        make.right.mas_equalTo(ws.view).with.offset(0);
-        make.height.mas_equalTo(ScreenWidth);
-    }];
-    
-    
 }
 
 

@@ -16,9 +16,9 @@ UICollectionViewDelegate,
 UICollectionViewDelegateFlowLayout,
 UIScrollViewDelegate
 >{
-    NSInteger itemCountOnePage;//每页能显示多少个item
+    NSInteger itemCountOnePage;/// 每页能显示多少个item
     NSInteger currentPage;/// 默认是0
-    CGFloat  _itemWidth;
+    CGFloat  _itemWidth;/// 单个item的宽度 和每行的个数相关
 }
 
 /// 网格视图
@@ -95,13 +95,13 @@ UIScrollViewDelegate
         _pageControl.hidden = NO;
         self.frame = CGRectMake(self.frame.origin.x,
                                 self.frame.origin.y,
-                                self.frame.size.width,
+                                [UIScreen mainScreen].bounds.size.width,
                                 self.pageControl.frame.origin.y + self.pageControl.frame.size.height);
     } else {
         _pageControl.hidden = YES;
         self.frame = CGRectMake(self.frame.origin.x,
                                 self.frame.origin.y,
-                                self.frame.size.width,
+                                [UIScreen mainScreen].bounds.size.width,
                                 self.collectionView.frame.origin.y + self.collectionView.frame.size.height);
     }
     

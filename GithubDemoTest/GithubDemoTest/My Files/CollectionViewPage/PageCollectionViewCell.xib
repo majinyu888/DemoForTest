@@ -30,7 +30,7 @@
             <connections>
                 <outlet property="lbl" destination="1As-2L-ryK" id="yCD-3w-Hl1"/>
             </connections>
-            <point key="canvasLocation" x="34" y="-13"/>
+            <point key="canvasLocation" x="-390" y="-171"/>
         </collectionViewCell>
     </objects>
 </document>
