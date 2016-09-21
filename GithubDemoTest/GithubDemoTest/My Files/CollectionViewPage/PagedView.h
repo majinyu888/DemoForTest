@@ -44,22 +44,9 @@
 @property (nonatomic, assign) CGFloat itemHeight;
 
 /**
- item宽度 : 默认 屏幕宽度的 四分之一
+ 是否显示 pageControl  默认为YES
  */
-@property (nonatomic, assign) CGFloat itemWidth;
-
-/**
- item水平间隔 : 默认 0
- */
-@property (nonatomic, assign) CGFloat itemSpageH;
-
-/**
- item垂直间隔 : 默认 0
- */
-@property (nonatomic, assign) CGFloat itemSpageV;
-
-
-
+@property (nonatomic, assign) BOOL isShowPageControl;
 
 
 @end

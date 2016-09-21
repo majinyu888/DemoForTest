@@ -18,6 +18,7 @@ UIScrollViewDelegate
 >{
     NSInteger itemCountOnePage;//每页能显示多少个item
     NSInteger currentPage;/// 默认是0
+    CGFloat  _itemWidth;
 }
 
 /// 网格视图
@@ -42,26 +43,27 @@ UIScrollViewDelegate
 - (void)defaultSetting
 {
     _maCates = [NSMutableArray array];
-    _itemHeight = [UIScreen mainScreen].bounds.size.width/4;
-    _itemWidth = [UIScreen mainScreen].bounds.size.width/4;
-    _itemSpageH = 0.f;
-    _itemSpageV = 0.f;
     _itemCountPerRow = 4;
     _rowCount = 2;
     itemCountOnePage = _itemCountPerRow * _rowCount;
+    _itemWidth = [UIScreen mainScreen].bounds.size.width/_itemCountPerRow;
+    _itemHeight = [UIScreen mainScreen].bounds.size.width/4;
     currentPage = 0;
+    _isShowPageControl = YES;
     
-    PageCollectionViewFlowLayout *layout = [[PageCollectionViewFlowLayout alloc] init];
-    layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    layout.itemCountPerRow = _itemCountPerRow;
-    layout.rowCount = _rowCount;
+    _layout = [[PageCollectionViewFlowLayout alloc] init];
+    _layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    _layout.itemCountPerRow = _itemCountPerRow;
+    _layout.rowCount = _rowCount;
+    _collectionView.collectionViewLayout = _layout;
     
     [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([PageCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:NSStringFromClass([PageCollectionViewCell class])];
     _collectionView.pagingEnabled = YES;
     _collectionView.dataSource = self;
     _collectionView.delegate = self;
-    _collectionView.collectionViewLayout = layout;
     _collectionView.showsHorizontalScrollIndicator = NO;
+    
+    _consCollectionViewHeight.constant = _itemHeight * _rowCount;
     
     _pageControl.currentPage = currentPage;
     _pageControl.numberOfPages = _maCates.count % itemCountOnePage == 0 ? _maCates.count / itemCountOnePage : (_maCates.count / itemCountOnePage)+ 1;
@@ -69,14 +71,40 @@ UIScrollViewDelegate
     _pageControl.defersCurrentPageDisplay = YES;
 }
 
+- (void)updateSetting
+{
+    itemCountOnePage = _itemCountPerRow * _rowCount;
+    _itemWidth = [UIScreen mainScreen].bounds.size.width/_itemCountPerRow;
+    _layout.itemCountPerRow = _itemCountPerRow;
+    _layout.rowCount = _rowCount;
+    _consCollectionViewHeight.constant = _itemHeight * _rowCount;
+    [_collectionView reloadData];
+    
+    currentPage = 0;
+    _pageControl.currentPage = currentPage;
+    _pageControl.numberOfPages = _maCates.count % itemCountOnePage == 0 ? _maCates.count / itemCountOnePage : (_maCates.count / itemCountOnePage)+ 1;
+    
+    [self setNeedsLayout];
+}
+
 - (void)layoutSubviews
 {
     [super layoutSubviews];
     
-    self.frame = CGRectMake(self.frame.origin.x,
-                            self.frame.origin.y,
-                            self.frame.size.width,
-                            self.pageControl.frame.origin.y + self.pageControl.frame.size.height);
+    if (_isShowPageControl) {
+        _pageControl.hidden = NO;
+        self.frame = CGRectMake(self.frame.origin.x,
+                                self.frame.origin.y,
+                                self.frame.size.width,
+                                self.pageControl.frame.origin.y + self.pageControl.frame.size.height);
+    } else {
+        _pageControl.hidden = YES;
+        self.frame = CGRectMake(self.frame.origin.x,
+                                self.frame.origin.y,
+                                self.frame.size.width,
+                                self.collectionView.frame.origin.y + self.collectionView.frame.size.height);
+    }
+    
 }
 
 #pragma mark - Setters
@@ -87,10 +115,47 @@ UIScrollViewDelegate
         return;
     } else {
         _maCates = maCates;
-        
-        [_collectionView reloadData];
-        _pageControl.currentPage = currentPage;
-        _pageControl.numberOfPages = _maCates.count % itemCountOnePage == 0 ? _maCates.count / itemCountOnePage : (_maCates.count / itemCountOnePage)+ 1;
+        [self updateSetting];
+    }
+}
+
+- (void)setRowCount:(NSUInteger)rowCount
+{
+    if (_rowCount == rowCount) {
+        return;
+    } else {
+        _rowCount = rowCount;
+        [self updateSetting];
+    }
+}
+
+- (void)setItemCountPerRow:(NSUInteger)itemCountPerRow
+{
+    if (_itemCountPerRow == itemCountPerRow) {
+        return;
+    } else {
+        _itemCountPerRow = itemCountPerRow;
+        [self updateSetting];
+    }
+}
+
+- (void)setItemHeight:(CGFloat)itemHeight
+{
+    if (_itemHeight == itemHeight) {
+        return;
+    } else {
+        _itemHeight = itemHeight;
+        [self updateSetting];
+    }
+}
+
+- (void)setIsShowPageControl:(BOOL)isShowPageControl
+{
+    if (_isShowPageControl == isShowPageControl) {
+        return;
+    } else {
+        _isShowPageControl = isShowPageControl;
+        [self updateSetting];
     }
 }
 
@@ -99,13 +164,13 @@ UIScrollViewDelegate
 //Cell个数
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return self.maCates.count % itemCountOnePage == 0 ?  self.maCates.count : (1 + (self.maCates.count/itemCountOnePage)) * itemCountOnePage;
+    return self.maCates.count % itemCountOnePage == 0 ? self.maCates.count : (1 + (self.maCates.count/itemCountOnePage)) * itemCountOnePage;
 }
 
 //Cell 尺寸
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(self.itemWidth, self.itemHeight);
+    return CGSizeMake(_itemWidth, _itemHeight);
 }
 
 //Cell
@@ -125,13 +190,13 @@ UIScrollViewDelegate
 //每组之间的间隔
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
-    return self.itemSpageV;
+    return 0.f;
 }
 
 //Cell之间的间距
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
-    return self.itemSpageH;
+    return 0.f;
 }
 
 //Header Size
