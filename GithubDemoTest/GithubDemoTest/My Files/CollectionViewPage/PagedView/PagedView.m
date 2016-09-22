@@ -8,7 +8,6 @@
 
 #import "PagedView.h"
 #import "PageCollectionViewFlowLayout.h"
-#import "PageCollectionViewCell.h"
 
 @interface PagedView()<
 UICollectionViewDataSource,
@@ -57,7 +56,6 @@ UIScrollViewDelegate
     _layout.rowCount = _rowCount;
     _collectionView.collectionViewLayout = _layout;
     
-    [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([PageCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:NSStringFromClass([PageCollectionViewCell class])];
     _collectionView.pagingEnabled = YES;
     _collectionView.dataSource = self;
     _collectionView.delegate = self;
@@ -92,11 +90,20 @@ UIScrollViewDelegate
     [super layoutSubviews];
     
     if (_isShowPageControl) {
-        _pageControl.hidden = NO;
-        self.frame = CGRectMake(self.frame.origin.x,
-                                self.frame.origin.y,
-                                [UIScreen mainScreen].bounds.size.width,
-                                self.pageControl.frame.origin.y + self.pageControl.frame.size.height);
+        if (_maCates.count <= itemCountOnePage) {
+            _pageControl.hidden = YES;
+            self.frame = CGRectMake(self.frame.origin.x,
+                                    self.frame.origin.y,
+                                    [UIScreen mainScreen].bounds.size.width,
+                                    self.collectionView.frame.origin.y + self.collectionView.frame.size.height);
+        } else {
+            _pageControl.hidden = NO;
+            self.frame = CGRectMake(self.frame.origin.x,
+                                    self.frame.origin.y,
+                                    [UIScreen mainScreen].bounds.size.width,
+                                    self.pageControl.frame.origin.y + self.pageControl.frame.size.height);
+        }
+        
     } else {
         _pageControl.hidden = YES;
         self.frame = CGRectMake(self.frame.origin.x,
@@ -105,6 +112,27 @@ UIScrollViewDelegate
                                 self.collectionView.frame.origin.y + self.collectionView.frame.size.height);
     }
     
+}
+
+#pragma mark - Public Method
+
+- (void)registerNib:(NSString *)nibName
+{
+    UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
+    if (!nib) {
+        NSLog(@"nib 名称 不正确 请检查名字");
+    } else {
+        [_collectionView registerNib:nib forCellWithReuseIdentifier:nibName];
+    }
+}
+
+- (void)registerClass:(Class)class
+{
+    if (!class) {
+        NSLog(@"class 不能为nil");
+    } else {
+        [_collectionView registerClass:class forCellWithReuseIdentifier:NSStringFromClass(class)];
+    }
 }
 
 #pragma mark - Setters
@@ -176,15 +204,15 @@ UIScrollViewDelegate
 /// Cell
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    PageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([PageCollectionViewCell class]) forIndexPath:indexPath];
-    if (self.maCates.count > indexPath.item) {
-        cell.userInteractionEnabled = YES;
-        cell.lbl.text = self.maCates[indexPath.item];
-    } else {
-        cell.userInteractionEnabled = NO;
-        cell.lbl.text = nil;
+    if (self.maCates.count == 0) {
+        return nil;
     }
-    return cell;
+    
+    if (self.configCellWithIndexPath) {
+        return self.configCellWithIndexPath(collectionView, indexPath);
+    } else {
+        return nil;
+    }
 }
 
 /// 每组之间的间隔

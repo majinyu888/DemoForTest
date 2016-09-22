@@ -18,6 +18,8 @@
 		277655181D7ECE8C0086892E /* ManagerSayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277655141D7ECE8C0086892E /* ManagerSayCell.xib */; };
 		2776551B1D7ECEBC0086892E /* CellHeightVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2776551A1D7ECEBC0086892E /* CellHeightVC2.m */; };
 		2776551D1D7ECFB80086892E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2776551C1D7ECFB80086892E /* icon.png */; };
+		2777FB541D93B03D007EC8DA /* PageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2777FB521D93B03D007EC8DA /* PageCollectionViewCell.m */; };
+		2777FB551D93B03D007EC8DA /* PageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2777FB531D93B03D007EC8DA /* PageCollectionViewCell.xib */; };
 		278CBE261D66F86500B502BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 278CBE251D66F86500B502BF /* main.m */; };
 		278CBE291D66F86500B502BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 278CBE281D66F86500B502BF /* AppDelegate.m */; };
 		278CBE311D66F86500B502BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278CBE301D66F86500B502BF /* Assets.xcassets */; };
@@ -41,8 +43,6 @@
 		27D4F6EA1D6C26D200135D6D /* whiteplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 27D4F6E41D6C26D200135D6D /* whiteplaceholder.png */; };
 		27D4F6EE1D6C294000135D6D /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4F6ED1D6C294000135D6D /* BaseVC.m */; };
 		27FA85D61D92205600340A5B /* CollectionViewPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FA85CC1D92205600340A5B /* CollectionViewPageVC.m */; };
-		27FA85D71D92205600340A5B /* PageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FA85CF1D92205600340A5B /* PageCollectionViewCell.m */; };
-		27FA85D81D92205600340A5B /* PageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27FA85D01D92205600340A5B /* PageCollectionViewCell.xib */; };
 		27FA85D91D92205600340A5B /* PageCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FA85D21D92205600340A5B /* PageCollectionViewFlowLayout.m */; };
 		27FA85DA1D92205600340A5B /* PagedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FA85D41D92205600340A5B /* PagedView.m */; };
 		27FA85DB1D92205600340A5B /* PagedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27FA85D51D92205600340A5B /* PagedView.xib */; };
@@ -69,6 +69,9 @@
 		277655191D7ECEBC0086892E /* CellHeightVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellHeightVC2.h; sourceTree = "<group>"; };
 		2776551A1D7ECEBC0086892E /* CellHeightVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellHeightVC2.m; sourceTree = "<group>"; };
 		2776551C1D7ECFB80086892E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		2777FB511D93B03D007EC8DA /* PageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCollectionViewCell.h; sourceTree = "<group>"; };
+		2777FB521D93B03D007EC8DA /* PageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCollectionViewCell.m; sourceTree = "<group>"; };
+		2777FB531D93B03D007EC8DA /* PageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageCollectionViewCell.xib; sourceTree = "<group>"; };
 		278CBE211D66F86500B502BF /* GithubDemoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubDemoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		278CBE251D66F86500B502BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		278CBE271D66F86500B502BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,9 +113,6 @@
 		27D4F6ED1D6C294000135D6D /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		27FA85CB1D92205600340A5B /* CollectionViewPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewPageVC.h; sourceTree = "<group>"; };
 		27FA85CC1D92205600340A5B /* CollectionViewPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewPageVC.m; sourceTree = "<group>"; };
-		27FA85CE1D92205600340A5B /* PageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCollectionViewCell.h; sourceTree = "<group>"; };
-		27FA85CF1D92205600340A5B /* PageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCollectionViewCell.m; sourceTree = "<group>"; };
-		27FA85D01D92205600340A5B /* PageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageCollectionViewCell.xib; sourceTree = "<group>"; };
 		27FA85D11D92205600340A5B /* PageCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		27FA85D21D92205600340A5B /* PageCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		27FA85D31D92205600340A5B /* PagedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagedView.h; sourceTree = "<group>"; };
@@ -326,6 +326,9 @@
 		27FA85CA1D92205600340A5B /* CollectionViewPage */ = {
 			isa = PBXGroup;
 			children = (
+				2777FB511D93B03D007EC8DA /* PageCollectionViewCell.h */,
+				2777FB521D93B03D007EC8DA /* PageCollectionViewCell.m */,
+				2777FB531D93B03D007EC8DA /* PageCollectionViewCell.xib */,
 				27FA85CB1D92205600340A5B /* CollectionViewPageVC.h */,
 				27FA85CC1D92205600340A5B /* CollectionViewPageVC.m */,
 				27FA85CD1D92205600340A5B /* PagedView */,
@@ -336,9 +339,6 @@
 		27FA85CD1D92205600340A5B /* PagedView */ = {
 			isa = PBXGroup;
 			children = (
-				27FA85CE1D92205600340A5B /* PageCollectionViewCell.h */,
-				27FA85CF1D92205600340A5B /* PageCollectionViewCell.m */,
-				27FA85D01D92205600340A5B /* PageCollectionViewCell.xib */,
 				27FA85D11D92205600340A5B /* PageCollectionViewFlowLayout.h */,
 				27FA85D21D92205600340A5B /* PageCollectionViewFlowLayout.m */,
 				27FA85D31D92205600340A5B /* PagedView.h */,
@@ -423,8 +423,8 @@
 				278CBE311D66F86500B502BF /* Assets.xcassets in Resources */,
 				27A07C3E1D73D7340031CCA2 /* item_school@2x.png in Resources */,
 				27A07C3C1D73D7340031CCA2 /* item_chat@2x.png in Resources */,
+				2777FB551D93B03D007EC8DA /* PageCollectionViewCell.xib in Resources */,
 				27A07C3D1D73D7340031CCA2 /* item_list@2x.png in Resources */,
-				27FA85D81D92205600340A5B /* PageCollectionViewCell.xib in Resources */,
 				2776551D1D7ECFB80086892E /* icon.png in Resources */,
 				27A07C3F1D73D7340031CCA2 /* item_share@2x.png in Resources */,
 				277655181D7ECE8C0086892E /* ManagerSayCell.xib in Resources */,
@@ -505,6 +505,7 @@
 				27D4F6E91D6C26D200135D6D /* HZWaitingView.m in Sources */,
 				27D4F6C11D6BED2100135D6D /* POPAnimationVC.m in Sources */,
 				27A07C421D73D7450031CCA2 /* PopListVC.m in Sources */,
+				2777FB541D93B03D007EC8DA /* PageCollectionViewCell.m in Sources */,
 				27D4F6E81D6C26D200135D6D /* HZPhotoItem.m in Sources */,
 				27FA85D91D92205600340A5B /* PageCollectionViewFlowLayout.m in Sources */,
 				278CBE441D67031700B502BF /* Utils.m in Sources */,
@@ -513,7 +514,6 @@
 				27D4F6E51D6C26D200135D6D /* HZPhotoBrowser.m in Sources */,
 				2776551B1D7ECEBC0086892E /* CellHeightVC2.m in Sources */,
 				27D4F6C51D6BED6600135D6D /* PhotoListVC.m in Sources */,
-				27FA85D71D92205600340A5B /* PageCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #import "CollectionViewPageVC.h"
 #import "PagedView.h"
+#import "PageCollectionViewCell.h"
 
 @interface CollectionViewPageVC ()
 
@@ -67,14 +68,28 @@
     __weak typeof(self) weakSelf = self;
     
     self.pagedView = [[[NSBundle mainBundle] loadNibNamed:@"PagedView" owner:nil options:nil] lastObject];
+    [self.pagedView registerNib:NSStringFromClass([PageCollectionViewCell class])];
     self.pagedView.maCates = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14"].mutableCopy;
+    
+    self.pagedView.configCellWithIndexPath = ^(UICollectionView *clv, NSIndexPath *indexPath) {
+        PageCollectionViewCell *cell = [clv dequeueReusableCellWithReuseIdentifier:@"PageCollectionViewCell" forIndexPath:indexPath];
+        if (self.pagedView.maCates.count > indexPath.item) {
+            cell.lbl.text = weakSelf.pagedView.maCates[indexPath.item];
+            cell.userInteractionEnabled = YES;
+        } else {
+            cell.lbl.text = nil;
+            cell.userInteractionEnabled = NO;
+        }
+        return cell;
+    };
     self.pagedView.onItemClickBlock = ^(NSIndexPath *indexPath) {
         [weakSelf showMessage:[NSString stringWithFormat:@"第%ld个item点击了",indexPath.item + 1]];
     };
-//    self.pagedView.rowCount = 2;
-//    self.pagedView.itemCountPerRow = 3;
-//    self.pagedView.itemHeight = 30;
-//    self.pagedView.isShowPageControl = NO;
+    
+        self.pagedView.rowCount = 6;
+        self.pagedView.itemCountPerRow = 2;
+//        self.pagedView.itemHeight = 50;
+//        self.pagedView.isShowPageControl = NO;
     
     [self.view addSubview:self.pagedView];
 }

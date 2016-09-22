@@ -13,6 +13,11 @@
 @interface PagedView : UIView
 
 /**
+ 根据indexPath配置Cell信息并返回Cell
+ */
+@property (nonatomic, copy) UICollectionViewCell *(^configCellWithIndexPath)(UICollectionView *collectionView, NSIndexPath *indexPath);
+
+/**
  分类item点击的回调
  */
 @property (nonatomic, copy) void (^onItemClickBlock)(NSIndexPath *indexPath);
@@ -47,6 +52,21 @@
  是否显示 pageControl  默认为YES
  */
 @property (nonatomic, assign) BOOL isShowPageControl;
+
+
+/**
+ 根据nibName注册Cell
+
+ @param nibName 名字
+ */
+- (void)registerNib:(NSString *)nibName;
+
+/**
+ 根据Class注册cell
+
+ @param class class
+ */
+- (void)registerClass:(Class)class;
 
 
 @end
