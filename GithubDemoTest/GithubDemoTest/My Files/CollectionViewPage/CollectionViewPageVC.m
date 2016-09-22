@@ -68,49 +68,32 @@
     __weak typeof(self) weakSelf = self;
     
     self.pagedView = [[[NSBundle mainBundle] loadNibNamed:@"PagedView" owner:nil options:nil] lastObject];
+    [self.view addSubview:self.pagedView];
+    
     [self.pagedView registerNib:NSStringFromClass([PageCollectionViewCell class])];
     self.pagedView.maCates = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14"].mutableCopy;
     
-    self.pagedView.configCellWithIndexPath = ^(UICollectionView *clv, NSIndexPath *indexPath) {
-        PageCollectionViewCell *cell = [clv dequeueReusableCellWithReuseIdentifier:@"PageCollectionViewCell" forIndexPath:indexPath];
+    self.pagedView.configCellWithIndexPath = ^(NSIndexPath *indexPath) {
         if (self.pagedView.maCates.count > indexPath.item) {
+            PageCollectionViewCell *cell = (PageCollectionViewCell *)[weakSelf.pagedView reusedCell:indexPath];
             cell.lbl.text = weakSelf.pagedView.maCates[indexPath.item];
             cell.userInteractionEnabled = YES;
+            return cell;
         } else {
+            PageCollectionViewCell *cell = (PageCollectionViewCell *)[weakSelf.pagedView reusedCell:indexPath];;
             cell.lbl.text = nil;
             cell.userInteractionEnabled = NO;
+            return cell;
         }
-        return cell;
     };
     self.pagedView.onItemClickBlock = ^(NSIndexPath *indexPath) {
-        [weakSelf showMessage:[NSString stringWithFormat:@"第%ld个item点击了",indexPath.item + 1]];
+        
     };
     
-        self.pagedView.rowCount = 6;
-        self.pagedView.itemCountPerRow = 2;
-//        self.pagedView.itemHeight = 50;
-//        self.pagedView.isShowPageControl = NO;
+    self.pagedView.rowCount = 4;
+    self.pagedView.itemCountPerRow = 3;
     
-    [self.view addSubview:self.pagedView];
 }
 
-
-
-#pragma mark - Custom Methods
-
-/**
- *  显示提示信息
- *
- *  @param msg 要显示的字符串
- */
-- (void)showMessage:(NSString *)msg
-{
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:msg message:nil preferredStyle:UIAlertControllerStyleAlert];
-    [self presentViewController:alert animated:YES completion:^{
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [alert dismissViewControllerAnimated:YES completion:nil];
-        });
-    }];
-}
 
 @end

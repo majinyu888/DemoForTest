@@ -12,16 +12,18 @@
 
 @interface PagedView : UIView
 
+#pragma mark - Block List
 /**
  根据indexPath配置Cell信息并返回Cell
  */
-@property (nonatomic, copy) UICollectionViewCell *(^configCellWithIndexPath)(UICollectionView *collectionView, NSIndexPath *indexPath);
+@property (nonatomic, copy) UICollectionViewCell *(^configCellWithIndexPath)(NSIndexPath *indexPath);
 
 /**
  分类item点击的回调
  */
 @property (nonatomic, copy) void (^onItemClickBlock)(NSIndexPath *indexPath);
 
+#pragma mark - Property List
 /**
  自定义CollectionViewFlowLayout布局类
  */
@@ -53,20 +55,29 @@
  */
 @property (nonatomic, assign) BOOL isShowPageControl;
 
-
+#pragma mark - Method List
 /**
  根据nibName注册Cell
-
+ 
  @param nibName 名字
  */
 - (void)registerNib:(NSString *)nibName;
 
 /**
  根据Class注册cell
-
+ 
  @param class class
  */
 - (void)registerClass:(Class)class;
+
+/**
+ 根据indexPath返回重用的cell
+ 
+ @param indexPath indexPath
+ 
+ @return 重用的标识符
+ */
+- (UICollectionViewCell *)reusedCell:(NSIndexPath *)indexPath;
 
 
 @end

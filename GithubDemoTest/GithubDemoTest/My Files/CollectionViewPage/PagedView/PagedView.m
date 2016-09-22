@@ -17,7 +17,8 @@ UIScrollViewDelegate
 >{
     NSInteger itemCountOnePage;/// 每页能显示多少个item
     NSInteger currentPage;/// 默认是0
-    CGFloat  _itemWidth;/// 单个item的宽度 和每行的个数相关
+    CGFloat   _itemWidth;/// 单个item的宽度 和每行的个数相关
+    NSString  *reuseCellIdentifier;//重用标识符
 }
 
 /// 网格视图
@@ -118,20 +119,32 @@ UIScrollViewDelegate
 
 - (void)registerNib:(NSString *)nibName
 {
+    reuseCellIdentifier = nibName;
     UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
     if (!nib) {
         NSLog(@"nib 名称 不正确 请检查名字");
     } else {
-        [_collectionView registerNib:nib forCellWithReuseIdentifier:nibName];
+        [_collectionView registerNib:nib forCellWithReuseIdentifier:reuseCellIdentifier];
     }
 }
 
 - (void)registerClass:(Class)class
 {
+    reuseCellIdentifier = NSStringFromClass(class);
     if (!class) {
         NSLog(@"class 不能为nil");
     } else {
-        [_collectionView registerClass:class forCellWithReuseIdentifier:NSStringFromClass(class)];
+        [_collectionView registerClass:class forCellWithReuseIdentifier:reuseCellIdentifier];
+    }
+}
+
+- (UICollectionViewCell *)reusedCell:(NSIndexPath *)indexPath
+{
+    if (!reuseCellIdentifier) {
+        NSLog(@"没有注册重用的cell");
+        return nil;
+    } else {
+        return [_collectionView dequeueReusableCellWithReuseIdentifier:reuseCellIdentifier forIndexPath:indexPath];
     }
 }
 
@@ -209,7 +222,7 @@ UIScrollViewDelegate
     }
     
     if (self.configCellWithIndexPath) {
-        return self.configCellWithIndexPath(collectionView, indexPath);
+        return self.configCellWithIndexPath(indexPath);
     } else {
         return nil;
     }
