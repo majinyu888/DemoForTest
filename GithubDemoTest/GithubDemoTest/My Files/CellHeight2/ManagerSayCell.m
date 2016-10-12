@@ -71,6 +71,8 @@ UICollectionViewDelegateFlowLayout
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
+    
     rowNumber = 3;
     cellSpace = 4;
     screenWidth = [UIScreen mainScreen].bounds.size.width;

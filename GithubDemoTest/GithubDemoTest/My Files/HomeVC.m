@@ -14,6 +14,7 @@
 #import "PopListVC.h"      //弹出列表
 #import "MyVC1.h"////自定义转场动画
 #import "CollectionViewPageVC.h"//分页
+#import "WebViewVC.h" //WebView 真实高度
 
 @interface HomeVC ()<
 UICollectionViewDataSource,
@@ -46,7 +47,8 @@ UICollectionViewDelegateFlowLayout
                @"弹出列表",
                @"自定义转场动画",
                @"Cell高度2",
-               @"CollectionView分页"
+               @"CollectionView分页",
+               @"WebView真实高度"
                ].mutableCopy;
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
@@ -126,6 +128,12 @@ UICollectionViewDelegateFlowLayout
             
         case 5: {
             CollectionViewPageVC *vc = [[CollectionViewPageVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+            
+        case 6: {
+            WebViewVC *vc = [[WebViewVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
