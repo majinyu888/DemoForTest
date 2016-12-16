@@ -10,6 +10,7 @@
 
 #import "POPAnimationVC.h" //facebook: animation framework
 #import "PhotoListVC.h"    //photo
+#import "PhotoListVC2.h"    //photo2
 #import "CellHeightVC2.h"  //cell height
 #import "PopListVC.h"      //弹出列表
 #import "MyVC1.h"////自定义转场动画
@@ -48,7 +49,8 @@ UICollectionViewDelegateFlowLayout
                @"自定义转场动画",
                @"Cell高度2",
                @"CollectionView分页",
-               @"WebView真实高度"
+               @"WebView真实高度",
+               @"图片浏览器2",
                ].mutableCopy;
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
@@ -107,7 +109,7 @@ UICollectionViewDelegateFlowLayout
             [self.navigationController pushViewController:photo animated:YES];
             break;
         }
-   
+            
         case 2: {
             PopListVC *popList = [[PopListVC alloc] init];
             [self.navigationController pushViewController:popList animated:YES];
@@ -135,6 +137,12 @@ UICollectionViewDelegateFlowLayout
         case 6: {
             WebViewVC *vc = [[WebViewVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+            
+        case 7: {
+            PhotoListVC2 *photo2 = [[PhotoListVC2 alloc] init];
+            [self.navigationController pushViewController:photo2 animated:YES];
             break;
         }
             

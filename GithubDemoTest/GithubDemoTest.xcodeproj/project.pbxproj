@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272001B81E03C24600B03629 /* PhotoListVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 272001B71E03C24600B03629 /* PhotoListVC2.m */; };
+		272001C71E03C3DF00B03629 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 272001BA1E03C3DF00B03629 /* Info.plist */; };
+		272001C81E03C3DF00B03629 /* PBImageScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272001BC1E03C3DF00B03629 /* PBImageScrollerViewController.m */; };
+		272001C91E03C3DF00B03629 /* PBImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 272001BF1E03C3DF00B03629 /* PBImageScrollView.m */; };
+		272001CA1E03C3DF00B03629 /* PBPresentAnimatedTransitioningController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272001C11E03C3DF00B03629 /* PBPresentAnimatedTransitioningController.m */; };
+		272001CB1E03C3DF00B03629 /* PBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272001C31E03C3DF00B03629 /* PBViewController.m */; };
+		272001CC1E03C3DF00B03629 /* UIView+PBSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 272001C61E03C3DF00B03629 /* UIView+PBSnapshot.m */; };
 		2739AB3E1D75561E00135DD5 /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739AB3D1D75561D00135DD5 /* NavigationControllerDelegate.m */; };
 		2739AB411D75571100135DD5 /* MyAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739AB401D75571100135DD5 /* MyAnimator.m */; };
 		2739AB441D7559E200135DD5 /* MyVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739AB431D7559E200135DD5 /* MyVC1.m */; };
@@ -51,6 +58,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		272001B61E03C24600B03629 /* PhotoListVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoListVC2.h; sourceTree = "<group>"; };
+		272001B71E03C24600B03629 /* PhotoListVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoListVC2.m; sourceTree = "<group>"; };
+		272001BA1E03C3DF00B03629 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		272001BB1E03C3DF00B03629 /* PBImageScrollerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBImageScrollerViewController.h; sourceTree = "<group>"; };
+		272001BC1E03C3DF00B03629 /* PBImageScrollerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBImageScrollerViewController.m; sourceTree = "<group>"; };
+		272001BD1E03C3DF00B03629 /* PBImageScrollView+internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PBImageScrollView+internal.h"; sourceTree = "<group>"; };
+		272001BE1E03C3DF00B03629 /* PBImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBImageScrollView.h; sourceTree = "<group>"; };
+		272001BF1E03C3DF00B03629 /* PBImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBImageScrollView.m; sourceTree = "<group>"; };
+		272001C01E03C3DF00B03629 /* PBPresentAnimatedTransitioningController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBPresentAnimatedTransitioningController.h; sourceTree = "<group>"; };
+		272001C11E03C3DF00B03629 /* PBPresentAnimatedTransitioningController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBPresentAnimatedTransitioningController.m; sourceTree = "<group>"; };
+		272001C21E03C3DF00B03629 /* PBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBViewController.h; sourceTree = "<group>"; };
+		272001C31E03C3DF00B03629 /* PBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBViewController.m; sourceTree = "<group>"; };
+		272001C41E03C3DF00B03629 /* PhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBrowser.h; sourceTree = "<group>"; };
+		272001C51E03C3DF00B03629 /* UIView+PBSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PBSnapshot.h"; sourceTree = "<group>"; };
+		272001C61E03C3DF00B03629 /* UIView+PBSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PBSnapshot.m"; sourceTree = "<group>"; };
 		2739AB3C1D75561D00135DD5 /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDelegate.h; sourceTree = "<group>"; };
 		2739AB3D1D75561D00135DD5 /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
 		2739AB3F1D75571100135DD5 /* MyAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnimator.h; sourceTree = "<group>"; };
@@ -147,6 +169,37 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		272001B51E03C24600B03629 /* PhotoBrowser2 */ = {
+			isa = PBXGroup;
+			children = (
+				272001B61E03C24600B03629 /* PhotoListVC2.h */,
+				272001B71E03C24600B03629 /* PhotoListVC2.m */,
+				272001B91E03C3DF00B03629 /* PhotoBrowser */,
+			);
+			path = PhotoBrowser2;
+			sourceTree = "<group>";
+		};
+		272001B91E03C3DF00B03629 /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				272001BA1E03C3DF00B03629 /* Info.plist */,
+				272001BB1E03C3DF00B03629 /* PBImageScrollerViewController.h */,
+				272001BC1E03C3DF00B03629 /* PBImageScrollerViewController.m */,
+				272001BD1E03C3DF00B03629 /* PBImageScrollView+internal.h */,
+				272001BE1E03C3DF00B03629 /* PBImageScrollView.h */,
+				272001BF1E03C3DF00B03629 /* PBImageScrollView.m */,
+				272001C01E03C3DF00B03629 /* PBPresentAnimatedTransitioningController.h */,
+				272001C11E03C3DF00B03629 /* PBPresentAnimatedTransitioningController.m */,
+				272001C21E03C3DF00B03629 /* PBViewController.h */,
+				272001C31E03C3DF00B03629 /* PBViewController.m */,
+				272001C41E03C3DF00B03629 /* PhotoBrowser.h */,
+				272001C51E03C3DF00B03629 /* UIView+PBSnapshot.h */,
+				272001C61E03C3DF00B03629 /* UIView+PBSnapshot.m */,
+			);
+			name = PhotoBrowser;
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		2739AB3B1D7555C400135DD5 /* TransitionVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +290,7 @@
 				2776550E1D7ECE8C0086892E /* CellHeight2 */,
 				27FA85CA1D92205600340A5B /* CollectionViewPage */,
 				27D4F6C21D6BED3900135D6D /* PhotoBrowser */,
+				272001B51E03C24600B03629 /* PhotoBrowser2 */,
 				27D4F6BE1D6BED2100135D6D /* PopAnimation */,
 				27A07C0D1D73D67F0031CCA2 /* PopListView */,
 				2739AB3B1D7555C400135DD5 /* TransitionVC */,
@@ -436,6 +490,7 @@
 				278CBE311D66F86500B502BF /* Assets.xcassets in Resources */,
 				27A07C3E1D73D7340031CCA2 /* item_school@2x.png in Resources */,
 				27A07C3C1D73D7340031CCA2 /* item_chat@2x.png in Resources */,
+				272001C71E03C3DF00B03629 /* Info.plist in Resources */,
 				2777FB551D93B03D007EC8DA /* PageCollectionViewCell.xib in Resources */,
 				27A07C3D1D73D7340031CCA2 /* item_list@2x.png in Resources */,
 				2776551D1D7ECFB80086892E /* icon.png in Resources */,
@@ -503,6 +558,7 @@
 			files = (
 				2739AB441D7559E200135DD5 /* MyVC1.m in Sources */,
 				2776550D1D7ECE5D0086892E /* CommonUtils.m in Sources */,
+				272001B81E03C24600B03629 /* PhotoListVC2.m in Sources */,
 				2739AB3E1D75561E00135DD5 /* NavigationControllerDelegate.m in Sources */,
 				278CBE3F1D66F8DF00B502BF /* HomeVC.m in Sources */,
 				27FA85D61D92205600340A5B /* CollectionViewPageVC.m in Sources */,
@@ -514,19 +570,24 @@
 				2739AB471D7559F200135DD5 /* MyVC2.m in Sources */,
 				277655151D7ECE8C0086892E /* ManagerImageCLVCell.m in Sources */,
 				27D4F6E71D6C26D200135D6D /* HZPhotoGroup.m in Sources */,
+				272001CC1E03C3DF00B03629 /* UIView+PBSnapshot.m in Sources */,
 				2739AB411D75571100135DD5 /* MyAnimator.m in Sources */,
+				272001C91E03C3DF00B03629 /* PBImageScrollView.m in Sources */,
 				27A07C1C1D73D67F0031CCA2 /* PopMenuTableView.m in Sources */,
 				27D4F6E91D6C26D200135D6D /* HZWaitingView.m in Sources */,
 				27D4F6C11D6BED2100135D6D /* POPAnimationVC.m in Sources */,
 				27A07C421D73D7450031CCA2 /* PopListVC.m in Sources */,
 				2777FB541D93B03D007EC8DA /* PageCollectionViewCell.m in Sources */,
+				272001C81E03C3DF00B03629 /* PBImageScrollerViewController.m in Sources */,
 				27D4F6E81D6C26D200135D6D /* HZPhotoItem.m in Sources */,
 				27FA85D91D92205600340A5B /* PageCollectionViewFlowLayout.m in Sources */,
+				272001CA1E03C3DF00B03629 /* PBPresentAnimatedTransitioningController.m in Sources */,
 				278CBE441D67031700B502BF /* Utils.m in Sources */,
 				27FA85DA1D92205600340A5B /* PagedView.m in Sources */,
 				278CBE261D66F86500B502BF /* main.m in Sources */,
 				27D4F6E51D6C26D200135D6D /* HZPhotoBrowser.m in Sources */,
 				2776551B1D7ECEBC0086892E /* CellHeightVC2.m in Sources */,
+				272001CB1E03C3DF00B03629 /* PBViewController.m in Sources */,
 				27D4F6C51D6BED6600135D6D /* PhotoListVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
