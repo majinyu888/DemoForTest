@@ -56,7 +56,7 @@ PBViewControllerDelegate
     PBViewController *pbViewController = [PBViewController new];
     pbViewController.pb_dataSource = self;
     pbViewController.pb_delegate = self;
-    pbViewController.pb_startPage = 1;
+    pbViewController.pb_startPage = 0;
     [self presentViewController:pbViewController animated:YES completion:nil];
 }
 
