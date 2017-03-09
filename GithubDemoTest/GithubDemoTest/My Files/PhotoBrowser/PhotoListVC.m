@@ -19,8 +19,6 @@ UITableViewDelegate
     NSMutableArray *maImageURLs;
 }
 
-@property (nonatomic, strong) UITableView *tableView;
-
 @end
 
 @implementation PhotoListVC
@@ -43,18 +41,15 @@ UITableViewDelegate
                     @"http://ww4.sinaimg.cn/thumbnail/677febf5gw1erma1g5xd0j20k0esa7wj.jpg"
                     ].mutableCopy;
     
-    _tableView = [[UITableView alloc] init];
-    _tableView.dataSource = self;
-    _tableView.delegate = self;
-    _tableView.rowHeight = 300;
-    [self.view addSubview:_tableView];
+    
+    self.tableView.rowHeight = 300;
     
     WS(ws);
     UIEdgeInsets padding = UIEdgeInsetsMake(10, 10, 10, 10);
-    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [ws.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(ws.view).with.insets(padding);
     }];
-
+    
 }
 
 #pragma mark - Table view data source

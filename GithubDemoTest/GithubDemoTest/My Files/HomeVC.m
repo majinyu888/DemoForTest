@@ -16,6 +16,7 @@
 #import "MyVC1.h"////自定义转场动画
 #import "CollectionViewPageVC.h"//分页
 #import "WebViewVC.h" //WebView 真实高度
+#import "TableHeaderViewVC.h"//header 拉伸效果
 
 @interface HomeVC ()<
 UICollectionViewDataSource,
@@ -51,6 +52,7 @@ UICollectionViewDelegateFlowLayout
                @"CollectionView分页",
                @"WebView真实高度",
                @"图片浏览器2",
+               @"header拉伸效果"
                ].mutableCopy;
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
@@ -143,6 +145,12 @@ UICollectionViewDelegateFlowLayout
         case 7: {
             PhotoListVC2 *photo2 = [[PhotoListVC2 alloc] init];
             [self.navigationController pushViewController:photo2 animated:YES];
+            break;
+        }
+            
+        case 8: {
+            TableHeaderViewVC *vc = [[TableHeaderViewVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
             

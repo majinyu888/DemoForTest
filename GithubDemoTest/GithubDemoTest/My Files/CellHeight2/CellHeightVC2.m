@@ -13,14 +13,11 @@
 #import "HZPhotoGroup.h"
 #import "HZPhotoItem.h"
 
-@interface CellHeightVC2 ()<
-UITableViewDataSource,
-UITableViewDelegate
->{
+@interface CellHeightVC2 ()
+{
     NSMutableArray *maComments;
 }
 
-@property (strong, nonatomic) UITableView *tableView;
 
 @end
 
@@ -35,7 +32,7 @@ UITableViewDelegate
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    [_tableView registerNib:[UINib nibWithNibName:@"ManagerSayCell" bundle:nil] forCellReuseIdentifier:@"ManagerSayCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"ManagerSayCell" bundle:nil] forCellReuseIdentifier:@"ManagerSayCell"];
     
     [self.view addSubview:self.tableView];
     

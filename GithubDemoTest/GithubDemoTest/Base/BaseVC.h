@@ -9,6 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "Header.h"
 
-@interface BaseVC : UIViewController
+@interface BaseVC : UIViewController<
+UITableViewDataSource,
+UITableViewDelegate
+>
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *maList;
+
 
 @end
