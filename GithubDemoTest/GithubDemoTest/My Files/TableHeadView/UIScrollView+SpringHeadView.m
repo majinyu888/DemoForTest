@@ -31,8 +31,9 @@ static char UIScrollViewSpringHeadView;
     [self addSubview:view];
     view.frame = CGRectMake(0, -view.bounds.size.height, view.bounds.size.width, view.bounds.size.height);
     self.topView = view;
-    /// 使用kvo 监听scrollView的滚动
-    [self addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+    self.delegate = self;
+//    /// 使用kvo 监听scrollView的滚动
+//    [self addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 /// scrollView delegate
@@ -45,10 +46,10 @@ static char UIScrollViewSpringHeadView;
     }
 }
 
-/// KVO
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
-{
-    [self scrollViewDidScroll:self];
-}
+///// KVO
+//- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+//{
+//    [self scrollViewDidScroll:self];
+//}
 
 @end

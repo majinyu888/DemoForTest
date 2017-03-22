@@ -30,6 +30,7 @@
     
     self.topImageView = [[UIImageView alloc] initWithFrame:self.header.bounds];
     self.topImageView.image = [UIImage imageNamed:@"img"];
+    self.topImageView.contentMode = UIViewContentModeScaleAspectFit;
     self.topImageView.frame = CGRectMake(0, 0, self.tableView.bounds.size.width, SpringHeadViewHeight);
     //只需要一行代码，就能实现同样效果
     [self.tableView addSpringHeadView:self.topImageView];

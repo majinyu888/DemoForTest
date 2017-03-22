@@ -10,13 +10,15 @@
 
 #import "POPAnimationVC.h" //facebook: animation framework
 #import "PhotoListVC.h"    //photo
-#import "PhotoListVC2.h"    //photo2
+#import "PhotoListVC2.h"   //photo2
 #import "CellHeightVC2.h"  //cell height
 #import "PopListVC.h"      //弹出列表
-#import "MyVC1.h"////自定义转场动画
+#import "MyVC1.h"          //自定义转场动画
 #import "CollectionViewPageVC.h"//分页
-#import "WebViewVC.h" //WebView 真实高度
+#import "WebViewVC.h"        //WebView 真实高度
 #import "TableHeaderViewVC.h"//header 拉伸效果
+#import "TTTTDemoVC.h"       //小的demo测试
+
 
 @interface HomeVC ()<
 UICollectionViewDataSource,
@@ -52,7 +54,8 @@ UICollectionViewDelegateFlowLayout
                @"CollectionView分页",
                @"WebView真实高度",
                @"图片浏览器2",
-               @"header拉伸效果"
+               @"header拉伸效果",
+               @"小Demo测试"
                ].mutableCopy;
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
@@ -150,6 +153,12 @@ UICollectionViewDelegateFlowLayout
             
         case 8: {
             TableHeaderViewVC *vc = [[TableHeaderViewVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+            
+        case 9: {
+            TTTTDemoVC *vc = [[TTTTDemoVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
