@@ -44,11 +44,6 @@
 {
     return self.maList.count;
 }
-//Cell 高度 如果Cell是固定高度 请直接用 rowHeight属性 而不用代理方法
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 44;
-}
 
 //Cell对象
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

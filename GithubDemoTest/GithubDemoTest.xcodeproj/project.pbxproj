@@ -19,6 +19,7 @@
 		2739AB441D7559E200135DD5 /* MyVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739AB431D7559E200135DD5 /* MyVC1.m */; };
 		2739AB471D7559F200135DD5 /* MyVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739AB461D7559F200135DD5 /* MyVC2.m */; };
 		27626D0D1DADEFED0087052D /* WebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27626D0C1DADEFED0087052D /* WebViewVC.m */; };
+		276F2143214F97250097D91F /* DispatchTimerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 276F2142214F97250097D91F /* DispatchTimerVC.m */; };
 		2776550D1D7ECE5D0086892E /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2776550C1D7ECE5D0086892E /* CommonUtils.m */; };
 		277655151D7ECE8C0086892E /* ManagerImageCLVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 277655101D7ECE8C0086892E /* ManagerImageCLVCell.m */; };
 		277655161D7ECE8C0086892E /* ManagerImageCLVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277655111D7ECE8C0086892E /* ManagerImageCLVCell.xib */; };
@@ -36,7 +37,6 @@
 		278CBE341D66F86500B502BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278CBE321D66F86500B502BF /* LaunchScreen.storyboard */; };
 		278CBE3F1D66F8DF00B502BF /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 278CBE3E1D66F8DF00B502BF /* HomeVC.m */; };
 		278CBE441D67031700B502BF /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 278CBE431D67031700B502BF /* Utils.m */; };
-		27908F171E76265F009CE8AF /* TTTTDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27908F161E76265F009CE8AF /* TTTTDemoVC.m */; };
 		27A07C1C1D73D67F0031CCA2 /* PopMenuTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A07C161D73D67F0031CCA2 /* PopMenuTableView.m */; };
 		27A07C3B1D73D7340031CCA2 /* item_battle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27A07C361D73D7340031CCA2 /* item_battle@2x.png */; };
 		27A07C3C1D73D7340031CCA2 /* item_chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27A07C371D73D7340031CCA2 /* item_chat@2x.png */; };
@@ -86,6 +86,8 @@
 		2739AB461D7559F200135DD5 /* MyVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyVC2.m; sourceTree = "<group>"; };
 		27626D0B1DADEFED0087052D /* WebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewVC.h; sourceTree = "<group>"; };
 		27626D0C1DADEFED0087052D /* WebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewVC.m; sourceTree = "<group>"; };
+		276F2141214F97250097D91F /* DispatchTimerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchTimerVC.h; sourceTree = "<group>"; };
+		276F2142214F97250097D91F /* DispatchTimerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchTimerVC.m; sourceTree = "<group>"; };
 		2776550B1D7ECE5D0086892E /* CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
 		2776550C1D7ECE5D0086892E /* CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
 		2776550F1D7ECE8C0086892E /* ManagerImageCLVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerImageCLVCell.h; sourceTree = "<group>"; };
@@ -116,8 +118,6 @@
 		278CBE411D66FD5800B502BF /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		278CBE421D67031700B502BF /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		278CBE431D67031700B502BF /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
-		27908F151E76265F009CE8AF /* TTTTDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTTDemoVC.h; sourceTree = "<group>"; };
-		27908F161E76265F009CE8AF /* TTTTDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTTDemoVC.m; sourceTree = "<group>"; };
 		27A07C151D73D67F0031CCA2 /* PopMenuTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuTableView.h; sourceTree = "<group>"; };
 		27A07C161D73D67F0031CCA2 /* PopMenuTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuTableView.m; sourceTree = "<group>"; };
 		27A07C361D73D7340031CCA2 /* item_battle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item_battle@2x.png"; sourceTree = "<group>"; };
@@ -233,7 +233,16 @@
 			path = WebView;
 			sourceTree = "<group>";
 		};
-		2776550E1D7ECE8C0086892E /* CellHeight2 */ = {
+		276F2140214F96F20097D91F /* DispatchTimer */ = {
+			isa = PBXGroup;
+			children = (
+				276F2141214F97250097D91F /* DispatchTimerVC.h */,
+				276F2142214F97250097D91F /* DispatchTimerVC.m */,
+			);
+			path = DispatchTimer;
+			sourceTree = "<group>";
+		};
+		2776550E1D7ECE8C0086892E /* CellHeight */ = {
 			isa = PBXGroup;
 			children = (
 				2776550F1D7ECE8C0086892E /* ManagerImageCLVCell.h */,
@@ -245,7 +254,7 @@
 				277655191D7ECEBC0086892E /* CellHeightVC2.h */,
 				2776551A1D7ECEBC0086892E /* CellHeightVC2.m */,
 			);
-			path = CellHeight2;
+			path = CellHeight;
 			sourceTree = "<group>";
 		};
 		278B23361E6E409700457A72 /* TableHeadView */ = {
@@ -305,17 +314,15 @@
 		278CBE3C1D66F8BC00B502BF /* My Files */ = {
 			isa = PBXGroup;
 			children = (
-				2776550E1D7ECE8C0086892E /* CellHeight2 */,
+				276F2140214F96F20097D91F /* DispatchTimer */,
+				2776550E1D7ECE8C0086892E /* CellHeight */,
 				27FA85CA1D92205600340A5B /* CollectionViewPage */,
-				278CBE3D1D66F8DF00B502BF /* HomeVC.h */,
-				278CBE3E1D66F8DF00B502BF /* HomeVC.m */,
 				27D4F6C21D6BED3900135D6D /* PhotoBrowser */,
 				272001B51E03C24600B03629 /* PhotoBrowser2 */,
 				27D4F6BE1D6BED2100135D6D /* PopAnimation */,
 				27A07C0D1D73D67F0031CCA2 /* PopListView */,
 				278B23361E6E409700457A72 /* TableHeadView */,
 				2739AB3B1D7555C400135DD5 /* TransitionVC */,
-				27908F111E762580009CE8AF /* TTTT */,
 				27626D0A1DADEFCC0087052D /* WebView */,
 			);
 			path = "My Files";
@@ -331,15 +338,6 @@
 				278CBE431D67031700B502BF /* Utils.m */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		27908F111E762580009CE8AF /* TTTT */ = {
-			isa = PBXGroup;
-			children = (
-				27908F151E76265F009CE8AF /* TTTTDemoVC.h */,
-				27908F161E76265F009CE8AF /* TTTTDemoVC.m */,
-			);
-			path = TTTT;
 			sourceTree = "<group>";
 		};
 		27A07C0D1D73D67F0031CCA2 /* PopListView */ = {
@@ -417,6 +415,8 @@
 			children = (
 				27D4F6EC1D6C294000135D6D /* BaseVC.h */,
 				27D4F6ED1D6C294000135D6D /* BaseVC.m */,
+				278CBE3D1D66F8DF00B502BF /* HomeVC.h */,
+				278CBE3E1D66F8DF00B502BF /* HomeVC.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -483,7 +483,7 @@
 		278CBE191D66F86500B502BF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = com.bm.hb;
 				TargetAttributes = {
 					278CBE201D66F86500B502BF = {
@@ -596,7 +596,6 @@
 				278CBE3F1D66F8DF00B502BF /* HomeVC.m in Sources */,
 				27FA85D61D92205600340A5B /* CollectionViewPageVC.m in Sources */,
 				278CBE291D66F86500B502BF /* AppDelegate.m in Sources */,
-				27908F171E76265F009CE8AF /* TTTTDemoVC.m in Sources */,
 				27D4F6E61D6C26D200135D6D /* HZPhotoBrowserView.m in Sources */,
 				27D4F6EE1D6C294000135D6D /* BaseVC.m in Sources */,
 				27626D0D1DADEFED0087052D /* WebViewVC.m in Sources */,
@@ -606,6 +605,7 @@
 				27D4F6E71D6C26D200135D6D /* HZPhotoGroup.m in Sources */,
 				272001CC1E03C3DF00B03629 /* UIView+PBSnapshot.m in Sources */,
 				2739AB411D75571100135DD5 /* MyAnimator.m in Sources */,
+				276F2143214F97250097D91F /* DispatchTimerVC.m in Sources */,
 				272001C91E03C3DF00B03629 /* PBImageScrollView.m in Sources */,
 				27A07C1C1D73D67F0031CCA2 /* PopMenuTableView.m in Sources */,
 				27D4F6E91D6C26D200135D6D /* HZWaitingView.m in Sources */,
@@ -649,14 +649,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -696,14 +704,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

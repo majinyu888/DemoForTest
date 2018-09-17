@@ -17,7 +17,7 @@
 #import "CollectionViewPageVC.h"//分页
 #import "WebViewVC.h"        //WebView 真实高度
 #import "TableHeaderViewVC.h"//header 拉伸效果
-#import "TTTTDemoVC.h"       //小的demo测试
+#import "DispatchTimerVC.h" // 重复执行的gcd timer
 
 
 @interface HomeVC ()<
@@ -55,11 +55,15 @@ UICollectionViewDelegateFlowLayout
                @"WebView真实高度",
                @"图片浏览器2",
                @"header拉伸效果",
-               @"小Demo测试"
+               @"GCD timer"
                ].mutableCopy;
     
+    CGSize screenSize = [UIScreen mainScreen].bounds.size;
+    
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.itemSize = CGSizeMake(80, 80);
+    layout.itemSize = CGSizeMake(screenSize.width, 80);
+    layout.minimumLineSpacing = 0;
+    layout.minimumInteritemSpacing = 0;
     _clv = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     _clv.dataSource = self;
     _clv.delegate = self;
@@ -71,7 +75,7 @@ UICollectionViewDelegateFlowLayout
 {
     WS(ws);
     [ws.view addSubview:_clv];
-    UIEdgeInsets padding = UIEdgeInsetsMake(10, 10, 10, 10);
+    UIEdgeInsets padding = UIEdgeInsetsMake(0, 0, 0, 0);
     [_clv mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(ws.view).with.insets(padding);
     }];
@@ -158,7 +162,7 @@ UICollectionViewDelegateFlowLayout
         }
             
         case 9: {
-            TTTTDemoVC *vc = [[TTTTDemoVC alloc] init];
+            DispatchTimerVC *vc = [[DispatchTimerVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

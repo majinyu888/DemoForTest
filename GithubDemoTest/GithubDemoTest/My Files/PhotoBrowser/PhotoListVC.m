@@ -42,8 +42,6 @@ UITableViewDelegate
                     ].mutableCopy;
     
     
-    self.tableView.rowHeight = 300;
-    
     WS(ws);
     UIEdgeInsets padding = UIEdgeInsetsMake(10, 10, 10, 10);
     [ws.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -61,6 +59,12 @@ UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 3;
+}
+
+//Cell 高度 如果Cell是固定高度 请直接用 rowHeight属性 而不用代理方法
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 300;
 }
 
 

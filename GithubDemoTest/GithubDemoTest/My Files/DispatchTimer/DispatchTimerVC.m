@@ -6,9 +6,9 @@
 //  Copyright © 2017年 com.bm.hb. All rights reserved.
 //
 
-#import "TTTTDemoVC.h"
+#import "DispatchTimerVC.h"
 
-@interface TTTTDemoVC ()
+@interface DispatchTimerVC ()
 {
     dispatch_source_t timer;
 }
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation TTTTDemoVC
+@implementation DispatchTimerVC
 
 - (void)viewDidLoad
 {
@@ -63,7 +63,7 @@
 
 - (void)doSomeThing
 {
-    NSLog(@"1");
+    NSLog(@"重复执行的gcd timer");
 }
 
 
