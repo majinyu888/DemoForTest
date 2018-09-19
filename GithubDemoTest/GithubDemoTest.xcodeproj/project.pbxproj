@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		272001B81E03C24600B03629 /* PhotoListVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 272001B71E03C24600B03629 /* PhotoListVC2.m */; };
-		272001C71E03C3DF00B03629 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 272001BA1E03C3DF00B03629 /* Info.plist */; };
 		272001C81E03C3DF00B03629 /* PBImageScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272001BC1E03C3DF00B03629 /* PBImageScrollerViewController.m */; };
 		272001C91E03C3DF00B03629 /* PBImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 272001BF1E03C3DF00B03629 /* PBImageScrollView.m */; };
 		272001CA1E03C3DF00B03629 /* PBPresentAnimatedTransitioningController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272001C11E03C3DF00B03629 /* PBPresentAnimatedTransitioningController.m */; };
@@ -20,6 +19,9 @@
 		2739AB471D7559F200135DD5 /* MyVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739AB461D7559F200135DD5 /* MyVC2.m */; };
 		27626D0D1DADEFED0087052D /* WebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27626D0C1DADEFED0087052D /* WebViewVC.m */; };
 		276F2143214F97250097D91F /* DispatchTimerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 276F2142214F97250097D91F /* DispatchTimerVC.m */; };
+		276F2147214F9B660097D91F /* KVOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 276F2146214F9B660097D91F /* KVOPerson.m */; };
+		276F214A214F9BA90097D91F /* KVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276F2149214F9BA90097D91F /* KVOController.m */; };
+		276F214D214FA40C0097D91F /* KVOAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 276F214C214FA40C0097D91F /* KVOAccount.m */; };
 		2776550D1D7ECE5D0086892E /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2776550C1D7ECE5D0086892E /* CommonUtils.m */; };
 		277655151D7ECE8C0086892E /* ManagerImageCLVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 277655101D7ECE8C0086892E /* ManagerImageCLVCell.m */; };
 		277655161D7ECE8C0086892E /* ManagerImageCLVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277655111D7ECE8C0086892E /* ManagerImageCLVCell.xib */; };
@@ -88,6 +90,12 @@
 		27626D0C1DADEFED0087052D /* WebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewVC.m; sourceTree = "<group>"; };
 		276F2141214F97250097D91F /* DispatchTimerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchTimerVC.h; sourceTree = "<group>"; };
 		276F2142214F97250097D91F /* DispatchTimerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchTimerVC.m; sourceTree = "<group>"; };
+		276F2145214F9B660097D91F /* KVOPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOPerson.h; sourceTree = "<group>"; };
+		276F2146214F9B660097D91F /* KVOPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOPerson.m; sourceTree = "<group>"; };
+		276F2148214F9BA90097D91F /* KVOController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOController.h; sourceTree = "<group>"; };
+		276F2149214F9BA90097D91F /* KVOController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOController.m; sourceTree = "<group>"; };
+		276F214B214FA40C0097D91F /* KVOAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOAccount.h; sourceTree = "<group>"; };
+		276F214C214FA40C0097D91F /* KVOAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOAccount.m; sourceTree = "<group>"; };
 		2776550B1D7ECE5D0086892E /* CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
 		2776550C1D7ECE5D0086892E /* CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
 		2776550F1D7ECE8C0086892E /* ManagerImageCLVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerImageCLVCell.h; sourceTree = "<group>"; };
@@ -242,6 +250,19 @@
 			path = DispatchTimer;
 			sourceTree = "<group>";
 		};
+		276F2144214F9B3A0097D91F /* KVOTest */ = {
+			isa = PBXGroup;
+			children = (
+				276F2145214F9B660097D91F /* KVOPerson.h */,
+				276F2146214F9B660097D91F /* KVOPerson.m */,
+				276F2148214F9BA90097D91F /* KVOController.h */,
+				276F2149214F9BA90097D91F /* KVOController.m */,
+				276F214B214FA40C0097D91F /* KVOAccount.h */,
+				276F214C214FA40C0097D91F /* KVOAccount.m */,
+			);
+			path = KVOTest;
+			sourceTree = "<group>";
+		};
 		2776550E1D7ECE8C0086892E /* CellHeight */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +335,7 @@
 		278CBE3C1D66F8BC00B502BF /* My Files */ = {
 			isa = PBXGroup;
 			children = (
+				276F2144214F9B3A0097D91F /* KVOTest */,
 				276F2140214F96F20097D91F /* DispatchTimer */,
 				2776550E1D7ECE8C0086892E /* CellHeight */,
 				27FA85CA1D92205600340A5B /* CollectionViewPage */,
@@ -465,8 +487,6 @@
 				278CBE1D1D66F86500B502BF /* Sources */,
 				278CBE1E1D66F86500B502BF /* Frameworks */,
 				278CBE1F1D66F86500B502BF /* Resources */,
-				CCCA3AE333C1D62130673B3F /* [CP] Embed Pods Frameworks */,
-				83737092678EF833FACF1CD0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -521,7 +541,6 @@
 				278CBE311D66F86500B502BF /* Assets.xcassets in Resources */,
 				27A07C3E1D73D7340031CCA2 /* item_school@2x.png in Resources */,
 				27A07C3C1D73D7340031CCA2 /* item_chat@2x.png in Resources */,
-				272001C71E03C3DF00B03629 /* Info.plist in Resources */,
 				2777FB551D93B03D007EC8DA /* PageCollectionViewCell.xib in Resources */,
 				27A07C3D1D73D7340031CCA2 /* item_list@2x.png in Resources */,
 				2776551D1D7ECFB80086892E /* icon.png in Resources */,
@@ -541,43 +560,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GithubDemoTest-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		83737092678EF833FACF1CD0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GithubDemoTest/Pods-GithubDemoTest-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CCCA3AE333C1D62130673B3F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GithubDemoTest/Pods-GithubDemoTest-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -607,6 +599,7 @@
 				2739AB411D75571100135DD5 /* MyAnimator.m in Sources */,
 				276F2143214F97250097D91F /* DispatchTimerVC.m in Sources */,
 				272001C91E03C3DF00B03629 /* PBImageScrollView.m in Sources */,
+				276F214D214FA40C0097D91F /* KVOAccount.m in Sources */,
 				27A07C1C1D73D67F0031CCA2 /* PopMenuTableView.m in Sources */,
 				27D4F6E91D6C26D200135D6D /* HZWaitingView.m in Sources */,
 				27D4F6C11D6BED2100135D6D /* POPAnimationVC.m in Sources */,
@@ -615,6 +608,7 @@
 				272001C81E03C3DF00B03629 /* PBImageScrollerViewController.m in Sources */,
 				27D4F6E81D6C26D200135D6D /* HZPhotoItem.m in Sources */,
 				27FA85D91D92205600340A5B /* PageCollectionViewFlowLayout.m in Sources */,
+				276F214A214F9BA90097D91F /* KVOController.m in Sources */,
 				272001CA1E03C3DF00B03629 /* PBPresentAnimatedTransitioningController.m in Sources */,
 				278CBE441D67031700B502BF /* Utils.m in Sources */,
 				27FA85DA1D92205600340A5B /* PagedView.m in Sources */,
@@ -623,6 +617,7 @@
 				2776551B1D7ECEBC0086892E /* CellHeightVC2.m in Sources */,
 				272001CB1E03C3DF00B03629 /* PBViewController.m in Sources */,
 				27D4F6C51D6BED6600135D6D /* PhotoListVC.m in Sources */,
+				276F2147214F9B660097D91F /* KVOPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,7 +682,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -736,7 +731,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -753,6 +748,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = D6S7RV872E;
 				INFOPLIST_FILE = GithubDemoTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bm.hb.GithubDemoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -769,6 +765,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = D6S7RV872E;
 				INFOPLIST_FILE = GithubDemoTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bm.hb.GithubDemoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -16,6 +16,13 @@ DEPENDENCIES:
   - pop (~> 1.0)
   - SDWebImage
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - NJKWebViewProgress
+    - pop
+    - SDWebImage
+
 SPEC CHECKSUMS:
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
@@ -24,4 +31,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 295177bcad476ae4834f61e80dafa9605f88441e
 
-COCOAPODS: 1.1.0.beta.1
+COCOAPODS: 1.5.3

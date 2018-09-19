@@ -11,6 +11,7 @@
 @interface DispatchTimerVC ()
 {
     dispatch_source_t timer;
+    NSInteger count;
 }
 
 @property (strong, nonatomic) UILabel *lbl;
@@ -25,10 +26,12 @@
     
     self.lbl = [UILabel new];
     self.lbl.textColor = [UIColor redColor];
+    self.lbl.font = [UIFont systemFontOfSize:18];
     self.lbl.text = @"测试 gcd timer 01";
-    [self.lbl sizeToFit];
     [self.view addSubview:self.lbl];
-    self.lbl.center = self.view.center;
+    [self.lbl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.mas_equalTo(self.view);
+    }];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -53,7 +56,12 @@
     
     // 设置timer执行的事件
     dispatch_source_set_event_handler(timer, ^{
-        [weakSelf doSomeThing];
+        // 注意
+        // 如果更新UI
+        // 一定要在主线程
+        dispatch_async(dispatch_get_main_queue(), ^{
+             [weakSelf doSomeThing];
+        });
     });
     
     // 激活timer
@@ -63,7 +71,9 @@
 
 - (void)doSomeThing
 {
-    NSLog(@"重复执行的gcd timer");
+    count ++;
+    self.lbl.text = [NSString stringWithFormat:@"%ld", count];
+
 }
 
 

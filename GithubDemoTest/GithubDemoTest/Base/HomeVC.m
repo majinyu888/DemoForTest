@@ -18,6 +18,7 @@
 #import "WebViewVC.h"        //WebView 真实高度
 #import "TableHeaderViewVC.h"//header 拉伸效果
 #import "DispatchTimerVC.h" // 重复执行的gcd timer
+#import "KVOController.h" // KVO 测试
 
 
 @interface HomeVC ()<
@@ -39,6 +40,7 @@ UICollectionViewDelegateFlowLayout
     [super viewDidLoad];
     [self initData];
     [self initUI];
+    [self addNotification];
 }
 
 - (void)initData
@@ -55,7 +57,8 @@ UICollectionViewDelegateFlowLayout
                @"WebView真实高度",
                @"图片浏览器2",
                @"header拉伸效果",
-               @"GCD timer"
+               @"GCD timer",
+               @"KVO 测试"
                ].mutableCopy;
     
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
@@ -68,7 +71,7 @@ UICollectionViewDelegateFlowLayout
     _clv.dataSource = self;
     _clv.delegate = self;
     _clv.backgroundColor = [UIColor whiteColor];
-    [_clv registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([self class])];
+    [_clv registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([UICollectionViewCell class])];
 }
 
 - (void)initUI
@@ -81,6 +84,25 @@ UICollectionViewDelegateFlowLayout
     }];
 }
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark - notificatiom
+
+- (void)addNotification {
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(deviceOrientationChanged:)
+                                                 name:UIDeviceOrientationDidChangeNotification
+                                               object:nil];
+}
+
+- (void)deviceOrientationChanged: (NSNotification *)noti {
+    [self.clv reloadData];
+}
+
+#pragma mark - clv datasource & delegate
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return maList.count;
@@ -89,9 +111,11 @@ UICollectionViewDelegateFlowLayout
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([self class]) forIndexPath:indexPath];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([UICollectionViewCell class]) forIndexPath:indexPath];
+    [cell.contentView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * obj, NSUInteger idx, BOOL * stop) {
+        [obj removeFromSuperview];
+    }];
     cell.backgroundColor = [Utils randomColor];
-    
     UILabel *lblTitle = [[UILabel alloc] initWithFrame:cell.frame];
     lblTitle.text = maList[indexPath.item];
     lblTitle.font = [UIFont systemFontOfSize:15];
@@ -167,10 +191,17 @@ UICollectionViewDelegateFlowLayout
             break;
         }
             
+        case 10: {
+            KVOController *vc = [[KVOController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+            
         default:
             break;
     }
 }
+
 
 
 @end

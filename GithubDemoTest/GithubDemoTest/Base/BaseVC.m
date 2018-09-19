@@ -26,7 +26,6 @@
     self.tableView.delegate = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:self.tableView];
-    
 }
 
 - (NSMutableArray *)maList
