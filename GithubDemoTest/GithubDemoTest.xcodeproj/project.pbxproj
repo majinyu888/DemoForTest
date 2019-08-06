@@ -18,6 +18,9 @@
 		2739AB441D7559E200135DD5 /* MyVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739AB431D7559E200135DD5 /* MyVC1.m */; };
 		2739AB471D7559F200135DD5 /* MyVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739AB461D7559F200135DD5 /* MyVC2.m */; };
 		27626D0D1DADEFED0087052D /* WebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27626D0C1DADEFED0087052D /* WebViewVC.m */; };
+		276E29A022F955C4008A6537 /* JYRoundMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 276E299F22F955C4008A6537 /* JYRoundMenuItemView.m */; };
+		276E29A322F9562F008A6537 /* JYRoundMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 276E29A222F9562F008A6537 /* JYRoundMenuView.m */; };
+		276E29A622F959C0008A6537 /* JYRoundMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 276E29A522F959C0008A6537 /* JYRoundMenuVC.m */; };
 		276F2143214F97250097D91F /* DispatchTimerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 276F2142214F97250097D91F /* DispatchTimerVC.m */; };
 		276F2147214F9B660097D91F /* KVOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 276F2146214F9B660097D91F /* KVOPerson.m */; };
 		276F214A214F9BA90097D91F /* KVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276F2149214F9BA90097D91F /* KVOController.m */; };
@@ -88,6 +91,12 @@
 		2739AB461D7559F200135DD5 /* MyVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyVC2.m; sourceTree = "<group>"; };
 		27626D0B1DADEFED0087052D /* WebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewVC.h; sourceTree = "<group>"; };
 		27626D0C1DADEFED0087052D /* WebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewVC.m; sourceTree = "<group>"; };
+		276E299E22F955C4008A6537 /* JYRoundMenuItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYRoundMenuItemView.h; sourceTree = "<group>"; };
+		276E299F22F955C4008A6537 /* JYRoundMenuItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYRoundMenuItemView.m; sourceTree = "<group>"; };
+		276E29A122F9562F008A6537 /* JYRoundMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYRoundMenuView.h; sourceTree = "<group>"; };
+		276E29A222F9562F008A6537 /* JYRoundMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYRoundMenuView.m; sourceTree = "<group>"; };
+		276E29A422F959C0008A6537 /* JYRoundMenuVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYRoundMenuVC.h; sourceTree = "<group>"; };
+		276E29A522F959C0008A6537 /* JYRoundMenuVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYRoundMenuVC.m; sourceTree = "<group>"; };
 		276F2141214F97250097D91F /* DispatchTimerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchTimerVC.h; sourceTree = "<group>"; };
 		276F2142214F97250097D91F /* DispatchTimerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchTimerVC.m; sourceTree = "<group>"; };
 		276F2145214F9B660097D91F /* KVOPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOPerson.h; sourceTree = "<group>"; };
@@ -241,6 +250,19 @@
 			path = WebView;
 			sourceTree = "<group>";
 		};
+		276E299422F95523008A6537 /* JYRoundView */ = {
+			isa = PBXGroup;
+			children = (
+				276E299E22F955C4008A6537 /* JYRoundMenuItemView.h */,
+				276E299F22F955C4008A6537 /* JYRoundMenuItemView.m */,
+				276E29A122F9562F008A6537 /* JYRoundMenuView.h */,
+				276E29A222F9562F008A6537 /* JYRoundMenuView.m */,
+				276E29A422F959C0008A6537 /* JYRoundMenuVC.h */,
+				276E29A522F959C0008A6537 /* JYRoundMenuVC.m */,
+			);
+			path = JYRoundView;
+			sourceTree = "<group>";
+		};
 		276F2140214F96F20097D91F /* DispatchTimer */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +357,7 @@
 		278CBE3C1D66F8BC00B502BF /* My Files */ = {
 			isa = PBXGroup;
 			children = (
+				276E299422F95523008A6537 /* JYRoundView */,
 				276F2144214F9B3A0097D91F /* KVOTest */,
 				276F2140214F96F20097D91F /* DispatchTimer */,
 				2776550E1D7ECE8C0086892E /* CellHeight */,
@@ -503,7 +526,7 @@
 		278CBE191D66F86500B502BF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = com.bm.hb;
 				TargetAttributes = {
 					278CBE201D66F86500B502BF = {
@@ -514,7 +537,7 @@
 			};
 			buildConfigurationList = 278CBE1C1D66F86500B502BF /* Build configuration list for PBXProject "GithubDemoTest" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -589,6 +612,8 @@
 				27FA85D61D92205600340A5B /* CollectionViewPageVC.m in Sources */,
 				278CBE291D66F86500B502BF /* AppDelegate.m in Sources */,
 				27D4F6E61D6C26D200135D6D /* HZPhotoBrowserView.m in Sources */,
+				276E29A022F955C4008A6537 /* JYRoundMenuItemView.m in Sources */,
+				276E29A622F959C0008A6537 /* JYRoundMenuVC.m in Sources */,
 				27D4F6EE1D6C294000135D6D /* BaseVC.m in Sources */,
 				27626D0D1DADEFED0087052D /* WebViewVC.m in Sources */,
 				277655171D7ECE8C0086892E /* ManagerSayCell.m in Sources */,
@@ -596,6 +621,7 @@
 				277655151D7ECE8C0086892E /* ManagerImageCLVCell.m in Sources */,
 				27D4F6E71D6C26D200135D6D /* HZPhotoGroup.m in Sources */,
 				272001CC1E03C3DF00B03629 /* UIView+PBSnapshot.m in Sources */,
+				276E29A322F9562F008A6537 /* JYRoundMenuView.m in Sources */,
 				2739AB411D75571100135DD5 /* MyAnimator.m in Sources */,
 				276F2143214F97250097D91F /* DispatchTimerVC.m in Sources */,
 				272001C91E03C3DF00B03629 /* PBImageScrollView.m in Sources */,
@@ -639,6 +665,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -694,6 +721,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

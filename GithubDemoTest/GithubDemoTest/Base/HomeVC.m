@@ -19,7 +19,7 @@
 #import "TableHeaderViewVC.h"//header 拉伸效果
 #import "DispatchTimerVC.h" // 重复执行的gcd timer
 #import "KVOController.h" // KVO 测试
-
+#import "JYRoundMenuVC.h"  // 半圆菜单测试
 
 @interface HomeVC ()<
 UICollectionViewDataSource,
@@ -58,7 +58,8 @@ UICollectionViewDelegateFlowLayout
                @"图片浏览器2",
                @"header拉伸效果",
                @"GCD timer",
-               @"KVO 测试"
+               @"KVO 测试",
+               @"半圆菜单"
                ].mutableCopy;
     
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
@@ -193,6 +194,12 @@ UICollectionViewDelegateFlowLayout
             
         case 10: {
             KVOController *vc = [[KVOController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+            
+        case 11: {
+            JYRoundMenuVC *vc = [[JYRoundMenuVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
